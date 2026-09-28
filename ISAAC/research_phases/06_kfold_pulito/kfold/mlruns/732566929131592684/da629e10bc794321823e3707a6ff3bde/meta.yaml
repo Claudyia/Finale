@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ccordova/IsAaC/ISAAC/research_phases/06_kfold_pulito/kfold/mlruns/732566929131592684/da629e10bc794321823e3707a6ff3bde/artifacts
+end_time: 1788790021812
+entry_point_name: ''
+experiment_id: '732566929131592684'
+lifecycle_stage: active
+run_id: da629e10bc794321823e3707a6ff3bde
+run_name: fold_0
+run_uuid: da629e10bc794321823e3707a6ff3bde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1788790021802
+status: 3
+tags: []
+user_id: ccordova

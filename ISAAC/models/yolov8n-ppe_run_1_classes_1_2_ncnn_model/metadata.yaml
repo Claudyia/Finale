@@ -1,0 +1,19 @@
+description: Ultralytics YOLOv8n-ppe_run_1_classes_1_2 model trained on /home/sflamini/dpi-training/YOLOv8n/datasets/run_1_classes_1_2/data.yaml
+author: Ultralytics
+date: '2025-05-29T16:13:20.453750'
+version: 8.3.143
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: helmet
+  1: vest
+args:
+  batch: 1
+  half: false
+channels: 3

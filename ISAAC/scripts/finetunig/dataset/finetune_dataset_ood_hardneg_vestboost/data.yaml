@@ -1,0 +1,7 @@
+path: /Users/claudia/Desktop/isaac_odd/scripts/finetunig/dataset/finetune_dataset_ood_hardneg_vestboost
+train: images/train
+val: images/val
+
+names:
+  0: helmet
+  1: vest

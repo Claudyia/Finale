@@ -1,0 +1,61 @@
+{
+  "run_name": "run12_fold2_best",
+  "role": "candidate",
+  "model": "/Users/claudia/Desktop/isac_odd/ISAAC_/isaac_odd originale/ppe_run12_yoloauto_fold2_best.pt",
+  "id": {
+    "overall": {
+      "precision": 0.7246561305801908,
+      "recall": 0.6686876078396022,
+      "f1": 0.6612576086089111,
+      "map50": 0.6750428942770489,
+      "map50_95": 0.32725275753174243
+    },
+    "per_class": [
+      {
+        "class_id": 0,
+        "class_name": "helmet",
+        "precision": 0.8247587878114749,
+        "recall": 0.4647020957983408,
+        "f1": 0.5944610528256491,
+        "map50": 0.593980609058677,
+        "map50_95": 0.17884956388321085
+      },
+      {
+        "class_id": 1,
+        "class_name": "vest",
+        "precision": 0.6245534733489069,
+        "recall": 0.8726731198808637,
+        "f1": 0.7280541643921732,
+        "map50": 0.7561051794954208,
+        "map50_95": 0.4756559511802741
+      }
+    ],
+    "speed_ms_per_image": {
+      "preprocess": 0.162021711255842,
+      "inference": 27.156781737922117,
+      "loss": 7.311798553637003e-05,
+      "postprocess": 0.17241274141890597
+    }
+  },
+  "ood": {
+    "metrics": {
+      "ood_images_total": 272.0,
+      "ood_images_skipped_unreadable": 0.0,
+      "ood_raw_detections_total": 106.0,
+      "ood_images_with_raw_detection": 84.0,
+      "ood_hallucinations_total": 102.0,
+      "ood_images_with_hallucination": 81.0,
+      "ood_image_hallucination_rate": 0.2977941176470588,
+      "ood_hallucinations_per_image": 0.375,
+      "ood_mean_confidence": 0.542800723922019,
+      "ood_max_confidence": 0.9213990569114685,
+      "ood_helmet_hallucinations": 19.0,
+      "ood_vest_hallucinations": 83.0
+    },
+    "class_counts": {
+      "vest": 83,
+      "helmet": 19
+    },
+    "csv": "/Users/claudia/Desktop/isac_odd/ISAAC_/isaac_odd originale/research_phases/07_test/id_ood_comparison_runs/run12_fold2_best/ood_hallucinations.csv"
+  }
+}

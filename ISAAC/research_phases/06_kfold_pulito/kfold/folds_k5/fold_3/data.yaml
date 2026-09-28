@@ -1,0 +1,7 @@
+path: /home/ccordova/IsAaC/ISAAC/research_phases/06_kfold_pulito/kfold/folds_k5/fold_3
+train: train.txt
+val: val.txt
+
+names:
+  0: helmet
+  1: vest

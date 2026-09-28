@@ -1,0 +1,7 @@
+path: /home/ccordova/IsAaC/ISAAC/research_phases/06_kfold_pulito/kfold/runs_noleak_vestboost/final_model_split
+train: train.txt
+val: val.txt
+
+names:
+  0: helmet
+  1: vest

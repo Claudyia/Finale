@@ -1,0 +1,7 @@
+path: /Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/ISAAC/research_phases/06_kfold_pulito/kfold/folds_k5_noleak/fold_0
+train: train.txt
+val: val.txt
+
+names:
+  0: helmet
+  1: vest

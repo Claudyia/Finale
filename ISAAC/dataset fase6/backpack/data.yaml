@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['backpack']
+
+roboflow:
+  workspace: mahakworkspace
+  project: backpack-yn8it
+  version: 3
+  license: Public Domain
+  url: https://universe.roboflow.com/mahakworkspace/backpack-yn8it/dataset/3

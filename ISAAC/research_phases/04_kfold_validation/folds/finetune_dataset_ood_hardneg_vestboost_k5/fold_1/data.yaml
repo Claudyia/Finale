@@ -1,0 +1,7 @@
+path: /Users/claudia/Desktop/isaac_odd/research_phases/04_kfold_validation/folds/finetune_dataset_ood_hardneg_vestboost_k5/fold_1
+train: train.txt
+val: val.txt
+
+names:
+  0: helmet
+  1: vest

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 16
+names: ['Gloves', 'Helmet', 'Human', 'Safety Boot', 'Safety Vest', 'boots', 'glasses', 'gloves', 'hat', 'helmet', 'no boot', 'no boots', 'no gloves', 'no hat', 'no vest', 'vest']
+
+roboflow:
+  workspace: skcet-g4h72
+  project: construction-ppe-rdhzo
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/skcet-g4h72/construction-ppe-rdhzo/dataset/3

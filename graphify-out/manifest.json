@@ -1,0 +1,27 @@
+{
+  "pyproject.toml": {
+    "mtime": 1790527948.9383583,
+    "ast_hash": "42a748d61c79b106941026f3dcb7a63e",
+    "semantic_hash": "42a748d61c79b106941026f3dcb7a63e"
+  },
+  "scripts/finetunig/finetuning.py": {
+    "mtime": 1790527980.4501636,
+    "ast_hash": "86af1211fe4d7810f1d5dae8709f24a2",
+    "semantic_hash": "86af1211fe4d7810f1d5dae8709f24a2"
+  },
+  "scripts/mlflow_utils.py": {
+    "mtime": 1790527980.4502504,
+    "ast_hash": "f1b25e0f874ff3aeed193c76fd29d1f8",
+    "semantic_hash": "f1b25e0f874ff3aeed193c76fd29d1f8"
+  },
+  "scripts/model-convert.py": {
+    "mtime": 1790527980.4504066,
+    "ast_hash": "3ae35d3556ca0c7a5558091ccc6a173f",
+    "semantic_hash": "3ae35d3556ca0c7a5558091ccc6a173f"
+  },
+  "README.md": {
+    "mtime": 1790527920.5818427,
+    "ast_hash": "a4ce88e1c12be9f76508dc683d36bbb1",
+    "semantic_hash": "a4ce88e1c12be9f76508dc683d36bbb1"
+  }
+}

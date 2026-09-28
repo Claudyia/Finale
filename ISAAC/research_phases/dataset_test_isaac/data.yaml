@@ -1,0 +1,7 @@
+names:
+- helmet
+- vest
+nc: 2
+test: images
+train: images
+val: images

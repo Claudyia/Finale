@@ -1,0 +1,81 @@
+{
+  "dataset": "/private/tmp/claude-501/-Users-claudia-Desktop-finale-copia/2f14d939-6093-485a-b04e-0e117d174b33/scratchpad/data_test_v2_fixed.yaml",
+  "split": "test",
+  "configuration": {
+    "imgsz": 640,
+    "batch": 8,
+    "confidence_threshold": 0.001,
+    "iou_threshold": 0.7,
+    "device": "mps",
+    "workers": 2
+  },
+  "baseline": {
+    "model": "/Users/claudia/Desktop/finale copia/ISAAC/yolov8n_run_1.2_classes_1_2.pt",
+    "output_directory": "/private/tmp/claude-501/-Users-claudia-Desktop-finale-copia/2f14d939-6093-485a-b04e-0e117d174b33/scratchpad/compare_fold2/baseline",
+    "metrics": {
+      "precision": 0.687490909088601,
+      "recall": 0.6589654911745122,
+      "f1": 0.6535340804406489,
+      "map50": 0.6689801067378792,
+      "map50_95": 0.3309986485312863,
+      "inference_ms_per_image": 2.186319036435433
+    }
+  },
+  "candidate": {
+    "model": "/Users/claudia/Desktop/finale copia/ISAAC/ppe_run12_yoloauto_fold2_best.pt",
+    "output_directory": "/private/tmp/claude-501/-Users-claudia-Desktop-finale-copia/2f14d939-6093-485a-b04e-0e117d174b33/scratchpad/compare_fold2/candidate",
+    "metrics": {
+      "precision": 0.8660522723817782,
+      "recall": 0.47237465548419205,
+      "f1": 0.50118677207885,
+      "map50": 0.48950157684664786,
+      "map50_95": 0.27401114673836624,
+      "inference_ms_per_image": 2.6647953074551287
+    }
+  },
+  "comparison": {
+    "precision": {
+      "baseline": 0.687490909088601,
+      "candidate": 0.8660522723817782,
+      "delta": 0.17856136329317718,
+      "delta_percent": 25.972905377017124,
+      "improved": true
+    },
+    "recall": {
+      "baseline": 0.6589654911745122,
+      "candidate": 0.47237465548419205,
+      "delta": -0.18659083569032014,
+      "delta_percent": -28.315721868492467,
+      "improved": false
+    },
+    "f1": {
+      "baseline": 0.6535340804406489,
+      "candidate": 0.50118677207885,
+      "delta": -0.15234730836179888,
+      "delta_percent": -23.31130279526936,
+      "improved": false
+    },
+    "map50": {
+      "baseline": 0.6689801067378792,
+      "candidate": 0.48950157684664786,
+      "delta": -0.17947852989123136,
+      "delta_percent": -26.82867966977603,
+      "improved": false
+    },
+    "map50_95": {
+      "baseline": 0.3309986485312863,
+      "candidate": 0.27401114673836624,
+      "delta": -0.05698750179292006,
+      "delta_percent": -17.21683820939636,
+      "improved": false
+    },
+    "inference_ms_per_image": {
+      "baseline": 2.186319036435433,
+      "candidate": 2.6647953074551287,
+      "delta": 0.4784762710196957,
+      "delta_percent": 21.885016003876622,
+      "improved": false
+    }
+  },
+  "candidate_improves_map50_95": false
+}

@@ -1,0 +1,19 @@
+description: Ultralytics YOLOv8n_run_1.1_classes_1_2 model trained on /home/sflamini/dpi-training/YOLOv8n/datasets/finetuning_1_classes_1_2/data.yaml
+author: Ultralytics
+date: '2025-06-24T11:02:49.983751'
+version: 8.3.158
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: helmet
+  1: vest
+args:
+  batch: 1
+  half: false
+channels: 3

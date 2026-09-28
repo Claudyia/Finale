@@ -1,0 +1,23 @@
+Dataset sorgente : scripts/finetunig/dataset/finetune_dataset_ood_hardneg_vestboost_helmetboost
+File totali (train+val)      : 7997
+Immagini uniche (post dedup) : 3836
+Duplicati rimossi            : 4161
+
+Immagini uniche per sorgente:
+  vest_ext         2400
+  ppe_orig         1194
+  oodneg           242
+
+Istanze (box) per classe, sulle immagini uniche:
+  helmet : 1542  (in 937 immagini)
+  vest   : 5541  (in 2659 immagini)
+  negative (label vuota) : 242 immagini
+  rapporto helmet/vest : 0.28
+
+Gruppi totali        : 3285
+Gruppi con >1 immagine: 304
+
+Output:
+  research_phases/06_kfold_pulito/manifest/manifest_clean.csv
+  research_phases/06_kfold_pulito/manifest/duplicates_removed.csv
+  research_phases/06_kfold_pulito/manifest/group_sizes.csv

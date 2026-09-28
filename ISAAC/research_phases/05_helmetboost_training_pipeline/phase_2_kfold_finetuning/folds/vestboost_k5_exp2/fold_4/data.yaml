@@ -1,0 +1,7 @@
+path: /home/ccordova/ISAAC_/isaac_odd originale/research_phases/05_helmetboost_training_pipeline/phase_2_kfold_finetuning/folds/vestboost_k5_exp2/fold_4
+train: train.txt
+val: val.txt
+
+names:
+  0: helmet
+  1: vest

@@ -1,0 +1,8 @@
+path: /Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/research_phases/06_kfold_pulito/dataset_test_v2
+train: images
+val: images
+test: images
+
+names:
+  0: helmet
+  1: vest

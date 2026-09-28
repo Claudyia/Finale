@@ -1,0 +1,53 @@
+{
+  "configuration": {
+    "model": "/Users/claudia/Desktop/isac_odd/ISAAC_/isaac_odd originale/ppe_run12_yoloauto_fold2_best.pt",
+    "data": "/Users/claudia/Desktop/isac_odd/ISAAC_/isaac_odd originale/research_phases/dataset_test_isaac/data.yaml",
+    "split": "test",
+    "imgsz": 640,
+    "batch": 8,
+    "confidence_threshold": 0.001,
+    "iou_threshold": 0.7,
+    "device": "automatic"
+  },
+  "overall": {
+    "precision": 0.7246561305801908,
+    "recall": 0.6686876078396022,
+    "f1": 0.6612576086089111,
+    "mAP50": 0.6750428942770489,
+    "mAP50-95": 0.32725275753174243,
+    "fitness": 0.32725275753174243
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "helmet",
+      "precision": 0.8247587878114749,
+      "recall": 0.4647020957983408,
+      "f1": 0.5944610528256491,
+      "mAP50": 0.593980609058677,
+      "mAP50-95": 0.17884956388321085
+    },
+    {
+      "class_id": 1,
+      "class_name": "vest",
+      "precision": 0.6245534733489069,
+      "recall": 0.8726731198808637,
+      "f1": 0.7280541643921732,
+      "mAP50": 0.7561051794954208,
+      "mAP50-95": 0.4756559511802741
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.15353215725718808,
+    "inference": 24.539715834691712,
+    "loss": 8.73455063833018e-05,
+    "postprocess": 0.16508049179612586
+  },
+  "ultralytics_results": {
+    "metrics/precision(B)": 0.7246561305801908,
+    "metrics/recall(B)": 0.6686876078396022,
+    "metrics/mAP50(B)": 0.6750428942770489,
+    "metrics/mAP50-95(B)": 0.32725275753174243,
+    "fitness": 0.32725275753174243
+  }
+}

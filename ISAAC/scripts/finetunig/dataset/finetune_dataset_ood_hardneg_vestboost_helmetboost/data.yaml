@@ -1,0 +1,7 @@
+path: scripts/finetunig/dataset/finetune_dataset_ood_hardneg_vestboost_helmetboost
+train: images/train
+val: images/val
+
+names:
+  0: helmet
+  1: vest

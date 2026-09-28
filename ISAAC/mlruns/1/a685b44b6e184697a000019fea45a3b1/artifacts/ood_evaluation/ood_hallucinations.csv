@@ -1,0 +1,4 @@
+image,class_name,confidence,pose_count,has_pose_context,x1,y1,x2,y2
+/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/research_phases/07_testv2/datasets/isaac_odd_dataset/ood/dataset_ood_hard_valid/dataset_ood_hard_valid_backpack_person_001_4de83c0d10.jpg,vest,0.30354422330856323,10,True,0.039539337158203125,367.494873046875,28.419050216674805,453.0867004394531
+/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/research_phases/07_testv2/datasets/isaac_odd_dataset/ood/dataset_ood_hard_valid/dataset_ood_hard_valid_backpack_person_020_ce6805fa17.jpg,vest,0.7384858131408691,2,True,820.1940307617188,0.0,959.7733154296875,117.60867309570312
+/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/research_phases/07_testv2/datasets/isaac_odd_dataset/ood/dataset_ood_hard_valid/dataset_ood_hard_valid_reflective_jacket_006_a9f91eb997.jpg,vest,0.5049969553947449,2,True,0.0,440.2687072753906,233.46543884277344,640.0

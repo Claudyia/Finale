@@ -1,0 +1,4 @@
+modello,precision,recall,f1,map50,map50_95
+baseline_yolov8n_run_1.2,0.6875,0.6590,0.6535,0.6690,0.3310
+fold2_ppe_run12,0.8661,0.4724,0.5012,0.4895,0.2740
+fase06_finale,0.8127,0.8145,0.8083,0.8596,0.5457

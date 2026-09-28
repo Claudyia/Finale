@@ -1,0 +1,9 @@
+industrial worker
+construction worker
+factory worker
+person wearing safety helmet
+person wearing hard hat
+person wearing safety vest
+person wearing high visibility vest
+person without safety helmet
+person without safety vest

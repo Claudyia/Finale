@@ -1,0 +1,9 @@
+Manifest: research_phases/06_kfold_pulito/kfold/merged_manifest_no_leak.csv
+Immagini: 35941  Gruppi: 25028
+Vest-only (oversample x1): 7052
+
+fold_0: train=28768 (+boost=28768) val=7173  val[helmet=3782 vest=1464 helmet+vest=1445 neg=482]
+fold_1: train=28739 (+boost=28739) val=7202  val[helmet=3823 vest=1369 helmet+vest=1451 neg=559]
+fold_2: train=28647 (+boost=28647) val=7294  val[helmet=3786 vest=1449 helmet+vest=1564 neg=495]
+fold_3: train=28853 (+boost=28853) val=7088  val[helmet=3763 vest=1378 helmet+vest=1455 neg=492]
+fold_4: train=28757 (+boost=28757) val=7184  val[helmet=3791 vest=1392 helmet+vest=1417 neg=584]

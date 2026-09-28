@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['fall']
+
+roboflow:
+  workspace: sch-3yjx0
+  project: life-ovm76
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sch-3yjx0/life-ovm76/dataset/2

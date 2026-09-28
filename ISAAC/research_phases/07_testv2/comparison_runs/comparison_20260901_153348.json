@@ -1,0 +1,81 @@
+{
+  "dataset": "/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/research_phases/dataset_test_isaac/data.yaml",
+  "split": "test",
+  "configuration": {
+    "imgsz": 640,
+    "batch": 8,
+    "confidence_threshold": 0.001,
+    "iou_threshold": 0.7,
+    "device": "automatic",
+    "workers": 2
+  },
+  "baseline": {
+    "model": "/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/yolov8n_run_1.2_classes_1_2.pt",
+    "output_directory": "/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/research_phases/07_testv2/comparison_runs/baseline",
+    "metrics": {
+      "precision": 0.4210324845440005,
+      "recall": 0.48185514732081663,
+      "f1": 0.3817674555918802,
+      "map50": 0.32466447371025475,
+      "map50_95": 0.11175328709351413,
+      "inference_ms_per_image": 13.615855679541387
+    }
+  },
+  "candidate": {
+    "model": "/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/ppe_run12_yoloauto_fold2_best.pt",
+    "output_directory": "/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/research_phases/07_testv2/comparison_runs/candidate",
+    "metrics": {
+      "precision": 0.7249612448230351,
+      "recall": 0.6688661001213118,
+      "f1": 0.6616426655666892,
+      "map50": 0.6751697389037277,
+      "map50_95": 0.32736043012492655,
+      "inference_ms_per_image": 15.778778850788752
+    }
+  },
+  "comparison": {
+    "precision": {
+      "baseline": 0.4210324845440005,
+      "candidate": 0.7249612448230351,
+      "delta": 0.30392876027903465,
+      "delta_percent": 72.18653463478118,
+      "improved": true
+    },
+    "recall": {
+      "baseline": 0.48185514732081663,
+      "candidate": 0.6688661001213118,
+      "delta": 0.18701095280049512,
+      "delta_percent": 38.810616393806875,
+      "improved": true
+    },
+    "f1": {
+      "baseline": 0.3817674555918802,
+      "candidate": 0.6616426655666892,
+      "delta": 0.27987520997480897,
+      "delta_percent": 73.31038983951612,
+      "improved": true
+    },
+    "map50": {
+      "baseline": 0.32466447371025475,
+      "candidate": 0.6751697389037277,
+      "delta": 0.3505052651934729,
+      "delta_percent": 107.95922978203019,
+      "improved": true
+    },
+    "map50_95": {
+      "baseline": 0.11175328709351413,
+      "candidate": 0.32736043012492655,
+      "delta": 0.21560714303141243,
+      "delta_percent": 192.93136572438746,
+      "improved": true
+    },
+    "inference_ms_per_image": {
+      "baseline": 13.615855679541387,
+      "candidate": 15.778778850788752,
+      "delta": 2.1629231712473658,
+      "delta_percent": 15.885326799528901,
+      "improved": false
+    }
+  },
+  "candidate_improves_map50_95": true
+}

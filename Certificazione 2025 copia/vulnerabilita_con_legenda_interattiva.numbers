@@ -1,0 +1,1557 @@
+
+<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+
+	
+			 
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+	/>
+	<meta name="robots" content="noindex" />
+	<link
+					href='https://res.public.onecdn.static.microsoft/wise/owl/owl.slim.e180403dfd58f0a4cc52.js'
+					rel='preload'
+					integrity='sha384-AH5Ys0VceWPMs+6jkwPPe1E/zrCHUpwA+OTT7V6lReJ2Fz8nxOCu6WyvcLWgwePP'
+					crossorigin='anonymous'
+					as='script'
+					nonce='6a02a031-8072-4fff-ad8f-5a4b3ccef147' 
+				>
+<link
+					href='https://res.public.onecdn.static.microsoft/wise/owl/word.boot.68b344835586d8a06307.js'
+					rel='preload'
+					integrity='sha384-P6k1LjqJflicn7nMmCvZyx2yxxfJsbn+5MDhlIbXcCu7/ApXKTlmzS813CF+lZmL'
+					crossorigin='anonymous'
+					as='script'
+					nonce='6a02a031-8072-4fff-ad8f-5a4b3ccef147' 
+				>
+
+ <script type="text/javascript" nonce ="6a02a031-8072-4fff-ad8f-5a4b3ccef147" >// <![CDATA[ 
+
+
+		var wopiDiagClient = { docFirstFlushTime : new Date().getTime() } ;
+		var wacUiHostSession = null;
+		var wopiContextFlushTime = null;
+		var isEarlyFlushEnabled = false;
+		var firstFlushEndTime = null;
+		var wopiTelemetry = null;
+		var _wopiContextJson ={"HostName":"SharePoint Online","SessionId":"26491E95-EB4E-4F3D-8C8E-D2497907E521","UserId":"10032005da7f5f04","WebAppUrl":"https://EUC-word-edit.officeapps.live.com/we/wordeditorframe.aspx?ui=it%2DIT\u0026rs=en%2DUS\u0026WOPISrc=https%3A%2F%2Fteleconsysit%2Esharepoint%2Ecom%2Fsites%2FStrategyInnovation336%2DProgettoISaAC%2F%5Fvti%5Fbin%2Fwopi%2Eashx%2Ffiles%2F21273971d646419b9428811282ef83ab\u0026wdEnableRoaming=1\u0026mscc=1\u0026hid=38a024a2-30d1-1000-05fe-8e8b3bdf236a","FileName":"ISAAC - Valutazione_deroga_Art6-3.docx","ContentAssembly":false,"ContentAssemblyMode":"","FileSize":18935,"FileGetUrl":"https://teleconsysit.sharepoint.com/sites/StrategyInnovation336-ProgettoISaAC/_layouts/15/download.aspx?UniqueId=21273971-d646-419b-9428-811282ef83ab\u0026Translate=false\u0026tempauth=v1.eyJzaXRlaWQiOiJmNjhkN2YzOS05YmVhLTQzZTktYWQ4Yy1hYTNmOGM2MjAxMDIiLCJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdGVsZWNvbnN5c2l0LnNoYXJlcG9pbnQuY29tQGRlYTEyNTk5LTFhYmMtNGFkOS05MjczLTRmNmE5OGIxMTA0YSIsImV4cCI6IjE3ODMzODQyNDUifQ.CgoKBHNuaWQSAjk5EgsI6JXtsKbdrT8QBRoOMTUxLjM1LjE0Ny4xNDQiFG1pY3Jvc29mdC5zaGFyZXBvaW50KiwrRGJYRFBCcFBCbjVKa1BNZi9Bb2RhMmJuZnpJNUp1T3VNZ3dLYWJQSXE0PTClATgBQhCiJKA40TAAEAX-jos73yNqShBoYXNoZWRwcm9vZnRva2VuUghbImttc2kiXWIEdHJ1ZWokMDA2YjI1Y2EtYTMyZS05ZDk4LTIzNjMtYjBlMGM5NzZiZWVkcikwaC5mfG1lbWJlcnNoaXB8MTAwMzIwMDVkYTdmNWYwNEBsaXZlLmNvbXoBMMIBJzAjLmZ8bWVtYmVyc2hpcHxjLmNvcmRvdmFAdGVsZWNvbnN5cy5pdMgBAeIBFi13SF9NTlA0eDBXbVVibGxPMnkxQUHqAQdbIkNQMSJd8gEBMQ.3mMBtFAPWThhglMFVAsjR21wOb83arUg4VQYUaeaHd8","FileUrlNoAuth":"https://teleconsysit.sharepoint.com/sites/StrategyInnovation336-ProgettoISaAC/_layouts/15/download.aspx?UniqueId=21273971-d646-419b-9428-811282ef83ab\u0026Translate=false","DownloadCode":"v1.eyJzaXRlaWQiOiJmNjhkN2YzOS05YmVhLTQzZTktYWQ4Yy1hYTNmOGM2MjAxMDIiLCJhcHBfZGlzcGxheW5hbWUiOiJQb3dlclBvaW50T25saW5lIiwiYXBwaWQiOiJlMDNhMTNlZS05NzMwLTRjYWUtODUyNS00NzU1OWM4Y2YxOGEiLCJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdGVsZWNvbnN5c2l0LnNoYXJlcG9pbnQuY29tQGRlYTEyNTk5LTFhYmMtNGFkOS05MjczLTRmNmE5OGIxMTA0YSIsImV4cCI6IjE3ODMzODQyNDUifQ.ChEKCnN1YnZlcnNpb24SA1BBQwrNAQoEYWFhcxLEAVsiNjdlM2RmMjUtMjY4YS00MzI0LWE1NTAtMGRlMWM3Zjk3Mjg3IiwiZTAzYTEzZWUtOTczMC00Y2FlLTg1MjUtNDc1NTljOGNmMThhIiwiZGM5MDgwNDMtODYzZi00NTMzLWI1ZTQtNzkxMTA4MmViZWZlIiwiZGJiY2E2ODYtMWE0OS00MDEyLWFjMWMtNWNiYWYyNDc1YTU5IiwiMGRiMWJjMDUtNTY5My00ODY2LWJmN2EtZmEyYmQ3YWNjYmY1Il0KCgoEc25pZBICOTkSCwiUmu6wpt2tPxAFGg4xNTEuMzUuMTQ3LjE0NCosK0RiWERQQnBQQm41SmtQTWYvQW9kYTJibmZ6STVKdU91TWd3S2FiUElxND0wpQE4AUIQoiSgONEwABAF_o6LO98jakoQaGFzaGVkcHJvb2Z0b2tlblIIWyJrbXNpIl1qJDAwNmIyNWNhLWEzMmUtOWQ5OC0yMzYzLWIwZTBjOTc2YmVlZHIpMGguZnxtZW1iZXJzaGlwfDEwMDMyMDA1ZGE3ZjVmMDRAbGl2ZS5jb216ATKCARIJmSWh3rwa2UoRknNPapixEEqiARdjLmNvcmRvdmFAdGVsZWNvbnN5cy5pdKoBEDEwMDMyMDA1REE3RjVGMDSyARVTaXRlcy5GdWxsQ29udHJvbC5BbGzIAQHiARYtd0hfTU5QNHgwV21VYmxsTzJ5MUFB6gEHWyJDUDEiXfIBATE.E0lOm1mGXML0343-fL9iQtLwyFfR0e8ulImlLdnSPEY","FileImmutableReason":0,"FontLibUrl":null,"BundleMajorVersion":1,"BundleUrl":null,"BundleUrlNoAuth":null,"BundleCode":"v1.eyJzaXRlaWQiOiJmNjhkN2YzOS05YmVhLTQzZTktYWQ4Yy1hYTNmOGM2MjAxMDIiLCJhcHBfZGlzcGxheW5hbWUiOiJQb3dlclBvaW50T25saW5lIiwiYXBwaWQiOiJlMDNhMTNlZS05NzMwLTRjYWUtODUyNS00NzU1OWM4Y2YxOGEiLCJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdGVsZWNvbnN5c2l0LnNoYXJlcG9pbnQuY29tQGRlYTEyNTk5LTFhYmMtNGFkOS05MjczLTRmNmE5OGIxMTA0YSIsImV4cCI6IjE3ODMzODQyNDUifQ.ChEKCnN1YnZlcnNpb24SA1BBQwrNAQoEYWFhcxLEAVsiNjdlM2RmMjUtMjY4YS00MzI0LWE1NTAtMGRlMWM3Zjk3Mjg3IiwiZTAzYTEzZWUtOTczMC00Y2FlLTg1MjUtNDc1NTljOGNmMThhIiwiZGM5MDgwNDMtODYzZi00NTMzLWI1ZTQtNzkxMTA4MmViZWZlIiwiZGJiY2E2ODYtMWE0OS00MDEyLWFjMWMtNWNiYWYyNDc1YTU5IiwiMGRiMWJjMDUtNTY5My00ODY2LWJmN2EtZmEyYmQ3YWNjYmY1Il0KCwoEc25pZBIDMTAxEgsIlJrusKbdrT8QBRoOMTUxLjM1LjE0Ny4xNDQqLE9DejFQam5TUEV2Qk1kVEpIRjgrb0k3Si9HdWxkYWpndzlGL3VWT0k1b2c9MMoBOAFCEKIkoDjRMAAQBf6OizvfI2pKEGhhc2hlZHByb29mdG9rZW5SCFsia21zaSJdaiQwMDZiMjVjYS1hMzJlLTlkOTgtMjM2My1iMGUwYzk3NmJlZWRyKTBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwNWRhN2Y1ZjA0QGxpdmUuY29tegEyggESCZklod68GtlKEZJzT2qYsRBKogEXYy5jb3Jkb3ZhQHRlbGVjb25zeXMuaXSqARAxMDAzMjAwNURBN0Y1RjA0sgEVU2l0ZXMuRnVsbENvbnRyb2wuQWxsyAEB4gEWLXdIX01OUDR4MFdtVWJsbE8yeTFBQeoBB1siQ1AxIl3yAQEx.r3Sy0Q_UraPmuU9kC4RWmApZH9rAR_Uu3k8eOnn48Pg","CoverPageHash":null,"ReadOnly":false,"IrmEnabled":false,"LabelIrmed":false,"SupportsZipIt":false,"OpcEnabled":false,"LastModified":1783347962000,"ServerStartTime":1783348245827.6409,"ServerCompleteTime":0,"WopiAction":"Edit","DocUniqueId":"teleconsysit.sharepoint.com_f68d7f39-9bea-43e9-ad8c-aa3f8c620102_21273971-d646-419b-9428-811282ef83ab","CTag":"{21273971-D646-419B-9428-811282EF83AB},1,2","ETag":"\"{21273971-D646-419B-9428-811282EF83AB},1\"","RumOneUpdate":true,"OpenWacInPlace":false,"AllowEarlyFeatures":false,"TenantId":null,"OwnerId":null,"SupportsPolicies":false,"UserCanNotWriteRelative":false,"DisablePrint":false,"DisableBrowserCachingOfUserContent":false,"ProtectInClient":false,"ClientUrl":null,"WebEditingDisaled":false,"RestrictedWebViewOnly":false,"UserCanWrite":false,"FileSharingUrl":null,"PostMessageOrigin":null,"SupportsAddActivities":false,"HostingPageOrigin":null,"OwletConfig":null,"TemplateInfo":null,"TemplateDriveId":null,"TemplateItemId":null,"BundleStaleness":null,"IsAsyncBundleStale":true,"ViewOnly":false,"DelayLoadResources":true,"Origin":"Sharing.DirectLink.Copy","Slrid":"","WacHostFlightStatus":{"WordViewToUnifiedRead":false},"ClickTime":0,"UniqueClick":"00000000-0000-0000-0000-000000000000","HostGeo":"EMEA","PredictedOfficeAppEndPoint":"GEU7","PredictedOfficeAppEndPointHintForRealSession":false,"PredictedOfficeAppEndPointAccessTime":"2026-07-06T14:25:00.289Z","PreseededSessionKey":null,"PreseededWacSessionId":null,"WacSessionId":"ade374ee-159a-0e25-df58-ad8cad49bc61","ParentFolderFullUrl":"https://teleconsysit.sharepoint.com/sites/StrategyInnovation336-ProgettoISaAC/Shared Documents/Progetto ISaAC - OI250039/Risk Register","DocAgeBucketAtViewTimeBasedOnLastModifiedTime":"4-8 mins","DocAgeBucketAtViewTimeBasedOnLastWrittenTime":"4-8 mins","DocCategoryBasedOnLastModifiedTime":"JustBorn","DocCategoryBasedOnLastWrittenTime":"JustBorn","SSRGenerationReason":"Unknown","RecordAgeBucketsAndCategoryForRumOneUsingWopicontext":true,"ListItemId":143,"ListId":"dd1ef44c-15e5-41c4-b519-2cba3a666009","AllowedOrigins":["https://euc-word-edit.officeapps.live.com","https://euc-word-view.officeapps.live.com"],"IsPragueDocument":false,"PragueSocketStorageDiscovery":null,"ResetUriToAddressBarLink":false,"IsEduUser":false,"DriveItemId":"01HDD6YW3RHETSCRWWTNAZIKEBCKBO7A5L","DriveId":"b!OX-N9uqb6UOtjKo_jGIBAhnj-kgEMZdBsr9ZCQYYrKtM9B7d5RXEQbUZLLo6ZmAJ","FileId":"21273971-d646-419b-9428-811282ef83ab","DocUrl":"https://teleconsysit.sharepoint.com/sites/StrategyInnovation336-ProgettoISaAC/Shared Documents/Progetto ISaAC - OI250039/Risk Register/ISAAC - Valutazione_deroga_Art6-3.docx","ParentId":null,"SharingLinkRedeemMetrics":"","TenantName":"Default","AddActivatedKSFromManifest":true,"MainLinkShareToken":null,"ListBaseTemplate":101};
+		
+		wopiContextFlushTime = new Date().getTime();
+		
+		var appName = 'Word';
+		var bootstrapperUrl = 'https://res.public.onecdn.static.microsoft/officeonline/wv/s/hB2640331E9C8785E_App_Scripts/word.boot.js';
+		var isCreateNew = false;
+		var isConsumer = false;
+		var wopiAuthInfo = {
+				WopiSrc: 'https://teleconsysit.sharepoint.com/sites/StrategyInnovation336-ProgettoISaAC/_vti_bin/wopi.ashx/files/21273971d646419b9428811282ef83ab',
+				AccessToken: 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjYxQjI0QTY0ODE4OUFCN0U4ODdBMDI3MzZFNzVFMjFEMjEwQjMxQzEiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJZYkpLWklHSnEzNkllZ0p6Ym5YaUhTRUxNY0UifQ.eyJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8Yy5jb3Jkb3ZhQHRlbGVjb25zeXMuaXQiLCJuaWkiOiJtaWNyb3NvZnQuc2hhcmVwb2ludCIsImlzdXNlciI6InRydWUiLCJjYWNoZWtleSI6IjBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwNWRhN2Y1ZjA0QGxpdmUuY29tIiwic2lkIjoiMDA2YjI1Y2EtYTMyZS05ZDk4LTIzNjMtYjBlMGM5NzZiZWVkIiwic2lnbmluX3N0YXRlIjoiW1wia21zaVwiXSIsInV0aSI6Ii13SF9NTlA0eDBXbVVibGxPMnkxQUEiLCJ4bXNfY2MiOiJbXCJDUDFcIl0iLCJ4bXNfc3NtIjoiMSIsIm9pZCI6Ijc5ZjdiOWM5LTlkM2YtNGQ1OC05Yjg4LTFhMGIxNzRjZTUzMyIsImlzbG9vcGJhY2siOiJUcnVlIiwiYXBwY3R4IjoiMjEyNzM5NzFkNjQ2NDE5Yjk0Mjg4MTEyODJlZjgzYWI7TU1Jb2RUdWsyeFpwNFNMUjJSVDdxT0dxM2xNPTtEZWZhdWx0OzsxQjAzQzQzMTJFRjtUcnVlOzs7NTEyOzM4YTAyNGEyLTMwZDEtMTAwMC0wNWZlLThlOGIzYmRmMjM2YSIsImZpZCI6IjIwMDA0MSIsImlzcyI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMEA5MDE0MDEyMi04NTE2LTExZTEtOGVmZi00OTMwNDkyNDAxOWIiLCJhdWQiOiJ3b3BpL3RlbGVjb25zeXNpdC5zaGFyZXBvaW50LmNvbUBkZWExMjU5OS0xYWJjLTRhZDktOTI3My00ZjZhOThiMTEwNGEiLCJuYmYiOiIxNzgzMzQ4MjQ1IiwiZXhwIjoiMTc4MzM4NDI0NSJ9.I5QkQ6RPDH-fMJ4RpjPYBSNq8_0qDu2luYoub9-kmfDBRx_rdQzFSMsQtsjm9wH2H0_K7ywnZCR_NIMJIWmQ4wCPmib8HxDXK8w7TjrPULY7ZXoutHpyoOmMbLGcKX2BUWI-jErt0tetooonBKt4IX05XXa6EdovqE16iXlt7NroFez4Zj1Pt6us7rAlBr4qfND1WQg2FZE1S0HwB2eNsgrqWW60GK_Myu4B0AmGIVc5fK6H9GtWaXGisGIJd69KF-6jLQovGmWgN3847gNUTRsMpxKJhYxodjc-M_gzgGKlTN80ImODfARyhvlvno-SC4ItvtHDRvH6IEKTq2k6sg',
+				AccessTokenExpiry: 1783384245856
+			};
+		var _spPageContextInfo={"siteId":"{f68d7f39-9bea-43e9-ad8c-aa3f8c620102}","webId":"{48fae319-3104-4197-b2bf-59090618acab}","groupId":null,"webTemplate":"69","env":"prod","env2":"prod","isAnonymousGuestUser":false,"currentUICultureName":"en-US","systemUserKey":"i:0h.f|membership|10032005da7f5f04@live.com","userDisplayName":"Claudia Lara Cordova","userLoginName":"c.cordova@teleconsys.it","userEmail":"c.cordova@teleconsys.it","siteSubscriptionId":"dea12599-1abc-4ad9-9273-4f6a98b1104a","farmLabel":"EMEA_501_Content","isCommonDomainRequestContext":false,"webAbsoluteUrl":"https://teleconsysit.sharepoint.com/sites/StrategyInnovation336-ProgettoISaAC","webAbsoluteUrlLegacy":null,"routingKey":null,"layoutsUrl":"_layouts/15","webDomain":"sharepoint.com","aadInstanceUrl":"https://login.microsoftonline.com","aadTenantId":"dea12599-1abc-4ad9-9273-4f6a98b1104a","isSPO":true,"msGraphEndpointUrl":"https://graph.microsoft.com","serverTime":"2026-07-06T14:30:45.9437935Z","ExpFeatures":[-1910538240,1079311105,83975232,638525468,858982200,-1799077248,80269312,55585821,273224740,-1810235392,1461904,-2013134712,98952,8519936,719524,1879834692,369115506,809111744,1628705287,-1073740800,10708041,8716289,95715844,66716038,272643584,1077379584,1880621082,1076891904,1073741904,371195905,135528720,41088,411107328,-1814103635,2113158335,2142061495,-1168888663,213638587,1739194503,-177839191,771074499,-41750915,440618323,-1625573551,-167625681,1614010991,545084954,864416461,-1380944810,1882151461,-2005208845,-1530037173,-589261445,-332212298,-1397819205,935546811,1572109251,-2122899154,-737118725,904415225,-677817954,-81267980,1780026747,-433002859,-844261968,88080302,-680477240,-662701585,-194511875,-1142687429,-2135192194,2006110170,-156443690,-83970177,870825593,2042224580,1323269475,382133023,256186202,-309969688,-1012151371,199390820,-352453225,866010062,2144570342,1471127269,1338674807,712473933,-1091902435,-1779616775,-1088780815,1399574525,-346823754,1270813295,-587420272,263413654,1505683648,-2033084099,-613419112,539184917,-249356943,-1223525000,1890911221,-1072312654,2012625149,-931479950,-1349080555,-1088999769,929236476,649640294,1812834398,1125169737,1050817008,-1107028131,-1363836755,1439847841,-917300315,209115347,-776031659,-113361626,-222757564,670898045,1156263042,1932018696,-1787691149,-631629570,-271325929,-806764628,935565823,-555232714,1718863857,1500122365,-1115106001,1907806075,-1228309708,1059027583,1774410703,-1496768559,541109452,1385974586,356622911,1186621932,-1861139853,1464838364,-801395216,-1697163868,-1826140141,1759105437,12123342,22587445,1145084100,1126179621,-184444377,-1709680308,-1342109366,1653084248,-2109675399,-2063595892,142739972,76773900,-1912596478,385876099,1052676,805306820,10485760,5],"ECSClientFeatures":[1619534225,335577095,135399424,0],"userPhotoCdnBaseUrl":"https://teleconsysit.sharepoint.com/_vti_bin/afdcache.ashx/_userprofile/userphoto.jpg?_oat_=1783377697_0e1f80bb2552c68f553d73e1c38bbc0588909c648eb802fb111d5b14e5a8cee0\u0026P1=1783352039\u0026P2=-699226807\u0026P3=1\u0026P4=JTCKh2qJU1cFm5KazMcfIDIZd4lNM03Zp5GckWIP9omevC40cK3jtp0H%2b3YUIdLOOdpTzilEDlMm6wjSGug6ar9prYkeyHD5Tlj0cOijzUlS%2fayWnvw4H3BR4obWLVhGm1ak5QD6QnGBlGduntHxXpeW8KT3TZZf4Y2UwH64s7ptNtgMJZ45WtPiBJrKSbCa%2fR6%2buWln8JwOx5vhVZmYCq8a%2bmXjWFCD8XW6stfN8V0MIBTx2s1uI0JMrBeYb49FbJDaPJ%2bOMt5u1Nzhi8ycOZ57nyhIGAP3I68WEt0gPOlIshKTq4%2bVeoO5DBsvb%2bELAyLqoX%2bIq01ZkEvHZLhjYQ%3d%3d","killSwitches":null,"experimentData":"AAACICIAECIAAQMAIAIYYiACECIiYXYCIAAWEBAAEgASIAAgMHABAQBhICEhABEiAAABACEAAmAgAAAQIAEBJhAAIAEBIAcAABICEAACAAAAEiEBAgEQEEEQEBAAIAAQEAECEBIREDcAAAAAEAAhECAQECFxAQcxIAAAESEAARMgAAEAAAAAAAEGAAAAEAAgAgABASEnISAQAAYQIAIAAAIAAhAAAAEAIAABAQAQAhASAAECIQUAIRAQEgEQIiIgIBAQAAACEAIBAAEAAAAAEiNRAQAQAAAAIAEg","experimentDataLookup":["0bm0a3"],"cloudType":"prod","ariaCollectorUrl":"https://eu-mobile.events.data.microsoft.com/Collector/3.0/","badgerTokenEndpoint":"https://api-badgerp.svc.ms/v1.0/token","requireBadgerToken":false,"aadSessionId":"006b25ca-a32e-9d98-2363-b0e0c976beed","aadUserId":"79f7b9c9-9d3f-4d58-9b88-1a0b174ce533","accessDeniedUrl":"AccessDenied.aspx?Source=https%3A%2F%2Fteleconsysit%2Esharepoint%2Ecom%2F%3Aw%3A%2Fr%2Fsites%2FStrategyInnovation336%2DProgettoISaAC%2FShared%20Documents%2FProgetto%20ISaAC%20%2D%20OI250039%2FRisk%20Register%2FISAAC%20%2D%20Valutazione%5Fderoga%5FArt6%2D3%2Edocx%3Fd%3Dw21273971d646419b9428811282ef83ab%26e%3D4%253ab9cac75ab12b4778b1c1aa0c1c4da8be%26sharingv2%3Dtrue%26fromShare%3Dtrue%26at%3D9\u0026correlation=38a024a2%2D30d1%2D1000%2D05fe%2D8e8b3bdf236a\u0026Type=item\u0026name=dd1ef44c%2D15e5%2D41c4%2Db519%2D2cba3a666009\u0026listItemId=143\u0026listItemUniqueId=21273971%2Dd646%2D419b%2D9428%2D811282ef83ab","isEmailAuthenticationGuestUser":false};_spPageContextInfo.updateFormDigestPageLoaded=new Date();_spPageContextInfo.clientServerTimeDelta=new Date(_spPageContextInfo.serverTime)-new Date();if(typeof(define)=='function'){define('SPPageContextInfo',[],function(){return _spPageContextInfo;});}_spPageContextInfo.killSwitches = {"BC058395-DA67-4E00-AABF-8E06EAA87586":1,"27C7DEF3-409A-44D0-BFDC-124F29455DDA":1,"4429323F-4400-4A98-A83B-4E27F4C42109":1,"8A705E30-E665-4B70-A48F-BE3B5872CDB4":1,"640C23CC-ECFE-4AE0-860B-FEC999027E92":1,"831C2FD4-0714-49B9-813F-6658ECB6489F":1,"EF43BA49-3B3B-49A8-B95D-296392094F4F":1,"78432EE1-1DA7-4E3A-B230-9C77BFEC795B":1};
+		var wopiDiagServer = {"officeBundleCacheHitInfo":null,"officeBundleCacheMissInfo":null,"officeBundleGenerationTime":null,"officeBundleLastUpdateTime":null,"serverStartTime":1783348245827.6409,"serverFirstFlushTime":null,"serverSecondFlushTime":null,"serverCompleteTime":1783348245864.9932,"ssrExpirationTime":null,"acquireCompleteTime":null};
+		wopiTelemetry = {"tenantName":"Default","isDoc2Aspx":false,"zeroByteDocumentCreationTimeMs":0.0,"isOcdi":false,"afd":"Edge-Prod-MIL22r5b","farmId":200041,"contentBundleStatus":"MissingOfficeBundleTag","contentBundleErrorInfo":null,"sharingStartTime":"1783348245779","sharingEndTime":"1783348245821","safeLinkDuration":null,"safeLinkWaitDuration":null,"safeLinkFailureReason":null,"safeLinkResponseStatusCode":null,"SFRC":null,"isABTestForCFIAttributes":false,"essDCHintForRealSession":false,"wacDCCookieSetTime":null,"isInlineScriptEnabled":false,"hasE5License":"Unknown","E5UTL":"U","isLOFRequest":false,"urlReferrer":null,"isABTestForSafeLinksPostAuth":false,"isABTestForSafeLinksUserPFT":false,"IPT":"None","LinkOpenTime":null,"isWacPrefetch":false,"TeamsCID":null,"safeLinksUrl":null,"safeLinksOperationId":null,"SentItems":0,"SLT":"None"};
+		var docTypeHint = "w";
+		var refreshIfTokenExpired = 'True' === 'True';
+		var rewriteClientAddressBarUrl = 'True' === 'True';
+		var refreshUri = 'https:\u002f\u002fteleconsysit.sharepoint.com\u002fsites\u002fStrategyInnovation336-ProgettoISaAC\u002f_layouts\u002f15\u002fDoc.aspx?sourcedoc={21273971-D646-419B-9428-811282EF83AB}\u0026file=ISAAC\u002b-\u002bValutazione_deroga_Art6-3.docx\u0026fromShare=true\u0026DSL=2\u0026action=default\u0026mobileredirect=true\u0026OR=Refresh';
+		var isWacViewMode = false;
+		var clientThrottlingProtection = 'LeastProtected';
+		var requestedCallThrottling = 'Normal';
+		var supportsMoveToFolder = true;
+		var supportsCommonFilePicker = true;
+		var supportsCustomAuthConfig = true;
+		var owlAuthTokenRefresh = false;
+		var wiseEnvironment = 'PRODUCTION';
+		var isOwlIFrameExperimentEnabled = false;
+		var isOwlIFrameExperimentTreatment = false;
+		var isOwlIFrameBootExperimentEnabled = false;
+		var isOwlIFrameBootExperienceTreatment = false;
+		var isOwlTwoStepCreateNewEnabled = false;
+		var isOwlSlimEnabled = true;
+		var isOwlBypassWiseATMEnabled = true;
+		var isOwlUseNewGCCDomainEnabled = true;
+		var isUseEndTimeOverrideEnabled = true;
+		var isOwlAdditionalJsapiTagsEnabled = true;
+		var isSendingZipInfoEnabled = false;
+		var isLoadMsalEnabled = true;
+		var isWACUsePairwiseBrokerMsalEnabled = true;
+		var isWordWebInteractiveReadOnlyModeExperimentTreatment = false;
+		var isWordWebInteractiveReadOnlyModeExperimentEnabled = false;
+		var isWordWebInteractiveReadOnlyModeFeatureEnabled = true;
+		var isInlineScriptExperimentTreatment = false;
+		var isInlineScriptExperimentEnabled = false;
+		var isInlineScriptEnabled = false;
+		var isDocAspxMsalEarlyStartTreatment = false;
+		var isDocAspxMsalEarlyStartExperimentEnabled = false;
+		var isDocAspxMsalEarlyStartEnabled = false;
+		var isJsApiBundleReductionExperimentTreatment = false;
+		var isJsApiBundleReductionExperimentEnabled = false;
+		var isJsApiBundleReductionFeatureEnabled = false;
+		var isExcelHostFrameRenderingEnabled = true;
+		
+		var g_wacOwlHost = null;
+		var state = 0 ;
+		var g_WACOwlDone = false;
+		const spoAadAppId = '00000003-0000-0ff1-ce00-000000000000';
+		const msaSiteId = 250206;
+		var testTenantPrefix = 'a830edad9050849';
+		var isEarlySplashScreenExperimentEnabled = false;
+		// ]]>
+</script>
+	<link rel="preconnect" href="https://euc-word-edit.officeapps.live.com" />
+	<link rel="shortcut icon" href="https://res.public.onecdn.static.microsoft/officeonline/wv/s/hFB4A4AE113F085ED_resources/1033/FavIcon_Word.ico" />
+	
+	<title>ISAAC - Valutazione_deroga_Art6-3.docx</title>
+	<style>
+		html {
+			height: 100%;
+		}
+		body {
+			height: 100%;
+		}
+	</style>
+	
+</head>
+<body
+	style="margin: 0; padding: 0; overflow: hidden; -ms-content-zooming: none"
+>
+	
+	<div id="WopiDocWACContainer" style="overflow: hidden"></div>
+	<div id="ShareDialog"></div>
+	<script type="text/javascript" nonce ="6a02a031-8072-4fff-ad8f-5a4b3ccef147" >// <![CDATA[ 
+
+
+				var log = function (message) {
+				};
+				async function loadWacOwlHostAsync(onload) {
+					if (g_wacOwlHost) {
+						onload(g_wacOwlHost);
+					} else {
+						if (typeof require === "undefined") {
+							window.setTimeout(function () {
+								loadWacOwlHostAsync(onload);
+							}, 100);
+						} else {
+							return require(["odsp-next/roots/WacOwlHost"], function (
+								wacOwlHostModule
+							) {
+								g_wacOwlHost = wacOwlHostModule.getWacOwlHost();
+								onload(g_wacOwlHost);
+							}, function(error) {
+								let errorMessage = `An error occurred while loading WacOwlHost async. ${error && error.requireType ? "Error type: " + error.requireType : ""}`;
+								if (error.originalError) {
+									errorMessage += ` Original error message: ${error.originalError.message}`;
+								}
+								reject(errorMessage);
+							});
+						}
+					}
+				}
+				async function loadMsalAsync() {
+					this.getOrigin();
+					loadWacOwlHostAsync(function (wacOwlHost) {
+						return wacOwlHost.loadMsal({earlyStartWaitTime: 0});
+					});
+				}
+				async function getWacOwlHost() {
+					if (g_wacOwlHost) {
+						return g_wacOwlHost;
+					}
+					if (typeof require === "undefined") {
+						var requireJsScript = document.getElementById('requireJsScriptLink');
+						await  new Promise(function(resolve) {
+							requireJsScript.addEventListener('load', function() {
+								resolve();
+							});
+							requireJsScript.addEventListener('error', function(errorMessage) {
+								var message = 'Failed to load RequireJsScript: ' + errorMessage;
+								log(message);
+								throw new Error(message);
+							});
+							if(typeof require !== "undefined") {
+								resolve();
+							}
+						});
+					}
+					g_wacOwlHost = await (new Promise((resolve, reject) => {
+						require(["odsp-next/roots/WacOwlHost"], function(wacOwlHostModule) {
+							resolve(wacOwlHostModule.getWacOwlHost());
+						}, function(error) {
+							let errorMessage = `An error occurred while loading WacOwlHost. ${error && error.requireType ? "Error type: " + error.requireType : ""}`;
+							if (error.originalError) {
+								errorMessage += ` Original error message: ${error.originalError.message}`;
+							}
+							reject(errorMessage);
+						});
+					}));
+					return g_wacOwlHost;
+				}
+				var getWacFrame = function (owlContainer) {
+					var frame = undefined;
+					if (!owlContainer)
+					{
+						owlContainer = (container.children.namedItem('owl-container') || container);
+					}
+					for (var i = 0; i < owlContainer.children.length; i++) {
+						if (owlContainer.children[i].tagName === 'IFRAME') {
+							frame = owlContainer.children[i];
+							if (frame)
+							{
+								return frame;
+							}
+						}
+					}
+					for (var i = 0; i < owlContainer.children.length; i++) {
+						if (owlContainer.children[i].tagName === 'DIV') {
+							frame = getWacFrame(owlContainer.children[i]);
+							if (frame)
+							{
+								return frame;
+							}
+						}
+					}
+					return undefined;
+				};
+				var getOrigin = function () {
+					if (!this._origin) {
+						this.populateOriginAndClickTime();
+					}
+					return this._origin;
+				};
+				var getClickTime = function () {
+					if (!this._clickTime) {
+						this.populateOriginAndClickTime();
+					}
+					return this._clickTime;
+				};
+				var populateOriginAndClickTime = function () {
+					try {
+						var origin = this._wopiContextJson.Origin;
+						if (this._wopiContextJson.ClickTime) {
+							this._clickTime = this._wopiContextJson.ClickTime;
+						} else if (
+							window.sessionStorage &&
+							!this._wopiContextJson.ClickTime
+						) {
+							var queryStr = document.location.search;
+							queryStr = unescape(queryStr);
+							if (queryStr) {
+								var idStart = queryStr.indexOf("sourcedoc=");
+								var idEnd = queryStr.substring(idStart).indexOf("&");
+								var srcId =
+									idEnd === -1
+										? queryStr.substring(idStart)
+										: queryStr.substring(idStart, idStart + idEnd);
+								var userClickKey =
+									"WOPIPerf_UserClick_" + escape(srcId);
+								var userClickTime =
+									window.sessionStorage.getItem(userClickKey);
+								if (userClickTime) {
+									origin = "DocLib";
+								}
+								window.sessionStorage.removeItem(userClickKey);
+								this._clickTime = Number(userClickTime);
+							}
+						} else {
+							this._clickTime = 0;
+						}
+						if (window.performance) {
+							const navEntries = window.performance.getEntriesByType("navigation");
+							if (navEntries.length > 0 && navEntries[0].type == 'reload') {
+								if (origin && (origin.includes("Sharing.ClientRedirect") || origin.includes("Sharing.ServerTransfer"))) {
+									origin = origin.includes("Sharing.ClientRedirect") ? "BrowserReload.Sharing.ClientRedirect" : "BrowserReload.Sharing.ServerTransfer";
+								}
+								else {
+									origin = "BrowserReload";
+								}
+							}
+						}
+						this._origin = origin ? origin : "Other";
+						if ((!this._origin.startsWith('AuthRedirect')) &&
+							window.sessionStorage && window.sessionStorage.getItem('wachost.msal.lastRedirectInfo')) {
+							this._origin = 'AuthRedirect' + (this._origin ? '.' + this._origin : '');
+						}
+						this._wopiContextJson.Origin = this._origin;
+					} catch (err) {
+						this._scriptWarning =
+							err && err.message
+								? err.message
+								: "process UserClick queryString error. ";
+					}
+				};
+				var container = document.getElementById("WopiDocWACContainer");
+				var getRebootOverrideData = function () {
+					if (!window._spPageContextInfo.killSwitches["BEC49F8F-7172-4A40-AE23-F3DD5D55105E"]) {
+						return undefined;
+					}
+					return {
+						previousSessionId: _wopiContextJson.WacSessionId,
+						mode: (_wopiContextJson.WopiAction === "View"
+							|| _wopiContextJson.WopiAction === "InteractivePreview"
+							|| _wopiContextJson.WopiAction === "EmbedView") ? "view" : "edit",
+						isNewSession: false,
+						lcid: _spPageContextInfo.currentUICultureName,
+						queryOverrides: null,
+					};
+				};
+				var getIntent = function () {
+					if (!window._spPageContextInfo.killSwitches["BEC49F8F-7172-4A40-AE23-F3DD5D55105E"]) {
+						return (_wopiContextJson.ViewOnly
+							|| _wopiContextJson.WopiAction === "View"
+							|| _wopiContextJson.WopiAction === "InteractivePreview"
+							|| _wopiContextJson.WopiAction === "EmbedView") ? "view" : "edit";
+					}
+					return _wopiContextJson.WopiAction === 'View' ? "view" : "edit";
+				};
+				var getDocumentBootInfo = function () {
+					var uiCulture;
+					var dataCulture;
+					if(_wopiContextJson.WebAppUrl)
+					{
+						var webAppUrlSearchParams = new URL(_wopiContextJson.WebAppUrl)?.searchParams;
+						uiCulture = webAppUrlSearchParams?.get("ui") ?? "";
+						dataCulture = webAppUrlSearchParams?.get("rs") ?? "";
+					}
+					else
+					{
+						uiCulture = null;
+						dataCulture = null;
+					}
+					if (!window._spPageContextInfo.killSwitches[
+						"6D9CEEC9-FD9D-4A42-8224-B892AD3AB149"
+						]) {
+							return {
+								docId: _wopiContextJson.DriveItemId,
+								driveId: _wopiContextJson.DriveId,
+								docUrl: _wopiContextJson.DocUrl,
+								fileName: _wopiContextJson.FileName,
+								shareId: "",
+								shareUrl: "",
+								baseUrl: _spPageContextInfo.webAbsoluteUrl,
+								fileId: _wopiContextJson.FileId,
+								fileType: appName,
+								wdOrigin: this.getOrigin(),
+								market: (!uiCulture ||  uiCulture === "") ? _spPageContextInfo.currentUICultureName : uiCulture,
+								puid: _wopiContextJson.UserId,
+								clickTime: this.getClickTime(),
+								navId: null,
+								wdValue: null,
+								isNewFile: isCreateNew,
+								isTwoStepCreateNew: isCreateNew && isOwlTwoStepCreateNewEnabled,
+								bootstrapperUrl: bootstrapperUrl,
+								rebootOverrideData: getRebootOverrideData(),
+								newFileId: null,
+								templateId: _wopiContextJson.TemplateItemId ? _wopiContextJson.TemplateItemId : _wopiContextJson.TemplateDriveId,
+								intent: getIntent(),
+								uiCulture: uiCulture,
+								dataCulture: dataCulture,
+								newFileTemplate: _wopiContextJson.TemplateInfo ? {
+									getUrl: _wopiContextJson.TemplateInfo?.FileGetUrl,
+									size: _wopiContextJson.TemplateInfo?.FileSize,
+									eTag: _wopiContextJson.TemplateInfo?.ETag,
+									uniqueId: _wopiContextJson.TemplateInfo?.DocUniqueId
+								} : null,
+							};
+					} else {
+						return {
+							docId: _wopiContextJson.DriveItemId,
+							driveId: _wopiContextJson.DriveId,
+							docUrl: _wopiContextJson.DocUrl,
+							fileName: _wopiContextJson.FileName,
+							shareId: "",
+							shareUrl: "",
+							baseUrl: _spPageContextInfo.webAbsoluteUrl,
+							fileId: _wopiContextJson.FileId,
+							fileType: appName,
+							wdOrigin: this.getOrigin(),
+							market: (!uiCulture ||  uiCulture === "") ? _spPageContextInfo.currentUICultureName : uiCulture,
+							puid: _wopiContextJson.UserId,
+							clickTime: this.getClickTime(),
+							navId: null,
+							wdValue: null,
+							isNewFile: isCreateNew,
+							bootstrapperUrl: bootstrapperUrl,
+							rebootOverrideData: getRebootOverrideData(),
+							newFileId: null,
+							templateId: _wopiContextJson.TemplateItemId ? _wopiContextJson.TemplateItemId : _wopiContextJson.TemplateDriveId,
+							intent: getIntent(),
+							uiCulture: uiCulture,
+							dataCulture: dataCulture,
+						};
+					}
+				};
+				var getTargetOrigin = function (url) {
+					const urlObj = new URL(url);
+					return urlObj.origin;
+				}
+				var getCustomAuthConfig = function () {
+					const customAuthConfigType = 'webMsaWithAadProxy';
+					const cignOutPathAndQuery = '/_layouts/15/SignOut.aspx?isso=true&returnUri=';
+					const targetOrigin = getTargetOrigin(window._wopiContextJson.WebAppUrl);
+					var topWindowUrl = "";
+					try {
+						topWindowUrl = window.top.location.href;
+					} catch (e) {
+						return "";
+					}
+					const authConfig = {
+						type: customAuthConfigType,
+						login_Hint: window._spPageContextInfo.userLoginName,
+						appSignOutUrl: window.location.origin + cignOutPathAndQuery + encodeURIComponent(topWindowUrl),
+						aad: {
+							appId: spoAadAppId,
+							wreply: targetOrigin
+						},
+						msa: {
+							siteId: msaSiteId,
+							wreply: targetOrigin
+						}
+					};
+					return JSON.stringify(authConfig);
+				};
+				var getHostUrl = async function () {
+					var wacOwlHost = await getWacOwlHost();
+					return wacOwlHost.getHostUrl();
+				};
+				var getSessionConfig = function () {
+					var createNewParams = null;
+					if(isCreateNew && isOwlTwoStepCreateNewEnabled)
+					{
+						createNewParams = {
+							appUrl: _wopiContextJson.WebAppUrl.replace(/([&?])WOPISrc=&/, "$1"),
+							file: {
+								name: _wopiContextJson.FileName,
+								getUrl: _wopiContextJson.FileGetUrl,
+								size: _wopiContextJson.FileSize,
+								eTag: _wopiContextJson.ETag,
+								uniqueId: _wopiContextJson.DriveItemId,
+							},
+							customFontCatalogUrl: _wopiContextJson.FontLibUrl,
+							contentBundle: {
+								majorVersion: _wopiContextJson.BundleMajorVersion,
+								url: _wopiContextJson.BundleUrl,
+								staleness: _wopiContextJson.BundleStaleness,
+							},
+							bootParams: {
+								readOnly: _wopiContextJson.ReadOnly,
+								irmEnabled: _wopiContextJson.IrmEnabled,
+								supportsDecryptedContentDownload: _wopiContextJson.LabelIrmed,
+								viewOnly: _wopiContextJson.ViewOnly,
+							},
+							preseededSession: {
+								key: _wopiContextJson.PreseededSessionKey,
+								id: _wopiContextJson.PreseededWacSessionId,
+							},
+							throttling: {
+								protection: clientThrottlingProtection,
+								request: requestedCallThrottling,
+							},
+						};
+					}
+					var hostUrl;
+					if ((!window._spPageContextInfo.killSwitches[
+							"A7EB9DB9-3E1A-43AF-AAF9-C5ED083F02D3"
+							])) {
+						hostUrl = owlAuthTokenRefresh ? window.location.origin : "";
+					}
+					else
+					{
+						hostUrl = owlAuthTokenRefresh ? getHostUrl() : "";
+					}
+					return {
+						hostCorrelationId: _wopiContextJson.SessionId,
+						isMsa: isConsumer,
+						tenantId: _spPageContextInfo.aadTenantId,
+						shareApiEndpoint: null,
+						organizationName: null,
+						metaUiHostVersion: "1",
+						logger: null,
+						health: null,
+						sessionId: _wopiContextJson.WacSessionId,
+						opcEnabled: _wopiContextJson.OpcEnabled,
+						activityBasedTimeoutEnabled: false,
+						wacExcelJsApiV2Enabled: true,
+						wacWordJsApiV2Enabled: true,
+						wacPptJsApiV2Enabled: true,
+						experiments: _spPageContextInfo.ExpFeatures,
+						highContrastMode: null,
+						additionalApplicationParameters: null,
+						bootDiagnostics: {
+							packageEntryTime: window.wopiDiagClient.wopiInitTime,
+							sharingRedeemMetrics: _wopiContextJson.SharingLinkRedeemMetrics,
+							isTestMode: false,
+							hostPageFirstFlushTime: window.wopiDiagClient.docFirstFlushTime,
+							hostPageWopiContextFlushTime: window.wopiContextFlushTime,
+							serverStartTime: window.wopiDiagServer.serverStartTime,
+							serverFirstFlushTime: window.wopiDiagServer.serverFirstFlushTime,
+							serverSecondFlushTime: window.wopiDiagServer.serverSecondFlushTime,
+							serverCompleteTime: window.wopiDiagServer.serverCompleteTime,
+							customResponseEnd: window.g_responseEnd,
+							customRequireJSDone: window.g_requireJSDone,
+							isEarlyFlushEnabled: window.isEarlyFlushEnabled,
+							firstFlushEndTime: window.firstFlushEndTime,
+							activatedKSFromManifest: _wopiContextJson.AddActivatedKSFromManifest,
+							wopiTelemetry: wopiTelemetry,
+							s500TenantName: _wopiContextJson.TenantName,
+							earlyHostSplashScreenStartTime: window.earlyHostSplashScreenStartTime,
+						},
+						customAuthConfigValue: getCustomAuthConfig(),
+						wiseEnvironment: wiseEnvironment,
+						hostUrl: hostUrl,
+						isSynthetic:  _wopiContextJson.DocUniqueId ? _wopiContextJson.DocUniqueId.startsWith(testTenantPrefix) : false,
+						upn: window._spPageContextInfo.killSwitches["87429B1E-474F-11EE-BE56-0242AC120002"] ? undefined : _spPageContextInfo.userLoginName,
+						isAnonymous: window._spPageContextInfo.killSwitches["66C866B4-469B-4930-8E50-589E3BABECE4"] ? undefined : _spPageContextInfo.isAnonymousGuestUser,
+						createNewParams: createNewParams,
+						fileImmutableReason: window._spPageContextInfo.killSwitches["03F2EC98-3339-4DCB-BFED-F67512F238AE"] ? undefined: _wopiContextJson.FileImmutableReason,
+						supportsZipIt : isSendingZipInfoEnabled ?  _wopiContextJson.SupportsZipIt : undefined
+					};
+				};
+				var getUiHostConfig = function () {
+					var featureGates;
+					var isWordWebInteractiveReadOnlyModeTreatment = isWordWebInteractiveReadOnlyModeExperimentTreatment || isWordWebInteractiveReadOnlyModeFeatureEnabled;
+					var isWordWebInteractiveReadOnlyModeExperiment = isWordWebInteractiveReadOnlyModeExperimentEnabled || isWordWebInteractiveReadOnlyModeFeatureEnabled;
+					var isInlineScriptTreatment = isInlineScriptExperimentTreatment || isInlineScriptEnabled;
+					var isInlineScriptExperiment = isInlineScriptExperimentEnabled || isInlineScriptEnabled;
+					var isJsApiBundleReductionTreatment = isJsApiBundleReductionExperimentTreatment || isJsApiBundleReductionFeatureEnabled;
+					var isJsApiBundleReductionExperiment = isJsApiBundleReductionExperimentEnabled || isJsApiBundleReductionFeatureEnabled;
+					featureGates = new Map([
+						["VisioJsApiV2Gate", true],
+						["IsOwlBootstrapperServerSideEnabled", true],
+						["IsOwlIFrameExperimentEnabled", isOwlIFrameExperimentEnabled ],
+						["IsOwlIFrameExperimentTreatment", isOwlIFrameExperimentTreatment ],
+						["IsOwlIFrameBootEnabled", isOwlIFrameBootExperimentEnabled ],
+						["IsOwlIFrameBootTreatment", isOwlIFrameBootExperienceTreatment ],
+						["IsOwlSlimEnabled", isOwlSlimEnabled ],
+						["IsOwlBypassWiseATMEnabled", isOwlBypassWiseATMEnabled ],
+						["IsOwlUseNewGCCDomainEnabled", isOwlUseNewGCCDomainEnabled ],
+						["IsUseEndTimeOverrideEnabled", isUseEndTimeOverrideEnabled ],
+						["IsOwlAdditionalJsapiTagsEnabled", isOwlAdditionalJsapiTagsEnabled ],
+						["IsWordWebInteractiveReadOnlyModeExperimentTreatment", isWordWebInteractiveReadOnlyModeTreatment ],
+						["IsWordWebInteractiveReadOnlyModeExperimentEnabled", isWordWebInteractiveReadOnlyModeExperiment ],
+						["IsInlineScriptExperimentTreatment", isInlineScriptTreatment ],
+						["IsInlineScriptExperimentEnabled", isInlineScriptExperiment ],
+						["IsDocAspxMsalEarlyStartExperimentEnabled", isDocAspxMsalEarlyStartExperimentEnabled],
+						["IsDocAspxMsalEarlyStartTreatment", isDocAspxMsalEarlyStartTreatment],
+						["IsJsApiBundleReductionExperimentTreatment", isJsApiBundleReductionTreatment ],
+						["IsJsApiBundleReductionExperimentEnabled", isJsApiBundleReductionExperiment ],
+						["IsExcelHostFrameRenderingEnabled", isExcelHostFrameRenderingEnabled ],
+						["EarlyHostSplashScreen", isEarlySplashScreenExperimentEnabled]
+					]);
+					var authTokenStrategy = undefined;
+					if ((!window._spPageContextInfo.killSwitches["9108D7F7-A338-4FD5-A508-7E6B942105CF"]) &&
+						isWACUsePairwiseBrokerMsalEnabled) {
+						authTokenStrategy = 'PairwiseBroker';
+					}
+					return {
+						hideHeader: false,
+						hideAppLauncherInHeader: false,
+						hideSearchInHeader: false,
+						hideMeInHeader: false,
+						hideChatInHeader: true,
+						hideWorkflowInHeader: true,
+						hideSettingsInHeader: false,
+						showAppIconInHeader: false,
+						useNeutralColorInHeader: false,
+						supportsAuthToken: false,
+						authTokenStrategy: authTokenStrategy,
+						supportsAtMentions: true,
+						supportsAccessibilityLoop: false,
+						supportsExcelExternalLinks: true,
+						supportsCreateNewDocument: false,
+						showCloseButton: false,
+						openInBrowserEnabled: false,
+						supportsExplicitUnload: true,
+						supportsMoveToFolder: supportsMoveToFolder,
+						supportsShare: true,
+						uiHostName: isConsumer ? "onedrivecom" : "sharepointcom",
+						sessionOriginPrefix: "DOCASPX.UNIFIEDUIHOST.",
+						uiHostIntegrationType: "docaspx",
+						uiEmbed: false,
+						ellipsisDownloadACopyButtonEnabled: false,
+						openLinksInNewWindow: false,
+						copyLinkEnabled: true,
+						supportsPopAndPushState: true,
+						supportsCustomAuthConfig: supportsCustomAuthConfig,
+						supportsCommonFilePicker: supportsCommonFilePicker,
+						supportsContentAssembly: _wopiContextJson.ContentAssembly,
+						contentAssemblyMode: _wopiContextJson.ContentAssemblyMode,
+						supportsRefreshTokenReauthPopUp: owlAuthTokenRefresh,
+						featureGates:  featureGates
+					};
+				};
+				var fetchItemFromNetwork = async function (
+					docBootInfo,
+					forceRefresh,
+					zeroByte,
+					logger
+				) {
+					var action = docBootInfo.intent === "view" ? "view" : "open";
+					if (zeroByte) action = "editnew";
+					if (!forceRefresh
+						&& ((docBootInfo.docUrl && docBootInfo.docUrl === _wopiContextJson.DocUrl)
+						|| (docBootInfo.driveId && docBootInfo.docId && docBootInfo.driveId === _wopiContextJson.DriveId && docBootInfo.docId === _wopiContextJson.DriveItemId)
+						|| (docBootInfo.baseUrl && docBootInfo.fileId && docBootInfo.baseUrl === _spPageContextInfo.webAbsoluteUrl && docBootInfo.fileId === _wopiContextJson.FileId))
+					) {
+						var sharePointIdsInformation = null;
+						if(!window._spPageContextInfo.killSwitches[
+								"965B6C7C-C016-4687-BBDF-D3A6BDA995C9"
+						]) {
+							sharePointIdsInformation = {
+								name: _wopiContextJson.FileName,
+								listId: _wopiContextJson.ListId,
+								listItemId: _wopiContextJson.ListItemId,
+								listItemUniqueId: _wopiContextJson.FileId,
+								siteUrl: _spPageContextInfo.webAbsoluteUrl
+								}
+							}
+						return Promise.resolve({
+							success: true,
+							token: {
+								RequestId: 1,
+								accessToken: wopiAuthInfo.AccessToken,
+								accessTokenExpiry: wopiAuthInfo.AccessTokenExpiry,
+								source: wopiAuthInfo.WopiSrc,
+							},
+							format: "JWT",
+							source: wopiAuthInfo.WopiSrc,
+							officeBundle: {
+								bundleCode: _wopiContextJson.BundleCode,
+								bundleUrlNoAuth: _wopiContextJson.BundleUrlNoAuth,
+								url: _wopiContextJson.BundleUrl,
+								version: _wopiContextJson.BundleMajorVersion,
+								bundleStaleness: _wopiContextJson.BundleStaleness,
+							},
+							["@content.downloadUrl"]: _wopiContextJson.FileGetUrl,
+							["@content.downloadCode"]: _wopiContextJson.DownloadCode,
+							eTag: _wopiContextJson.ETag,
+							cTag: _wopiContextJson.CTag,
+							name: _wopiContextJson.FileName,
+							size: _wopiContextJson.FileSize,
+							currentUserRole: {
+								readOnly: _wopiContextJson.ReadOnly,
+								blocksDownload: _wopiContextJson.ViewOnly,
+							},
+							openWith: {
+								wac: {
+									bootstrapperUrl: bootstrapperUrl,
+									applicationUrl: _wopiContextJson.WebAppUrl.replace(
+										/([&?])WOPISrc=&/,
+										"$1"
+									),
+									userId: _wopiContextJson.UserId,
+									accessToken: wopiAuthInfo.AccessToken,
+									accessTokenExpiry: wopiAuthInfo.AccessTokenExpiry,
+									wopiSrc: wopiAuthInfo.WopiSrc,
+									clientThrottlingProtection: clientThrottlingProtection,
+									requestedCallThrottling: requestedCallThrottling,
+									customFontCatalogUrl: _wopiContextJson.FontLibUrl,
+									fileUrlNoAuth: _wopiContextJson.FileUrlNoAuth,
+									downloadCode: _wopiContextJson.DownloadCode,
+								},
+							},
+							file:{
+								irmEnabled: _wopiContextJson.IrmEnabled,
+							},
+							sharepointIds: sharePointIdsInformation,
+							sensitivityLabel: {
+								id: '',
+								displayName: '',
+								protectionEnabled: _wopiContextJson.LabelIrmed,
+							},
+							wacSession: {
+								preSeededSessionKey: _wopiContextJson.PreseededSessionKey,
+								preSeededWacSessionId: _wopiContextJson.PreseededWacSessionId,
+							}
+						});
+					} else {
+						var wacOwlHost = await getWacOwlHost();
+						return wacOwlHost.fetchItemFromNetwork(docBootInfo, zeroByte);
+					}
+				};
+				var isInitCompleted = function () {
+					return state === 3  || state === 4 ;
+				};
+				var onTimeout = function () {
+					if (state === 2 ) {
+						state = 4 ;
+						var err = "Initialization timed out.";
+						log(err);
+						var qosStartTime = window.wopiDiagClient.wopiInitTime;
+						
+						var qosEndTime = new Date().getTime();
+						if (typeof Microsoft?.Office?.OWL?.logJsonStringMetadata === 'function') {
+							const currentTime = new Date();
+							const logData = JSON.stringify({
+								event: 'onTimeout',
+								bootStatus: 'failed',
+								wacSessionId: _wopiContextJson.WacSessionId,
+								hostSessionId: _wopiContextJson.SessionId,
+								clientId: appName,
+								isHidden: document.hidden,
+								timestamp: currentTime.toISOString(),
+								wacInitTime: window.wopiDiagClient?.wopiInitTime,
+								timeSinceInit: currentTime.getTime() - window.wopiDiagClient?.wopiInitTime
+							});
+							Microsoft.Office.OWL.logJsonStringMetadata(logData);
+							log(logData);
+						}
+						loadWacOwlHostAsync(function (wacOwlHost) {
+							if (document.visibilityState === "visible") {
+								wacOwlHost.logWacInitializationQoS(
+									qosStartTime,
+									1 ,
+									"WacInit timed out",
+									err,
+									"",
+									qosEndTime
+								);
+							} else {
+								wacOwlHost.logWacInitializationQoS(
+									qosStartTime,
+									2 ,
+									"WacInit timed out for not focus",
+									err,
+									"",
+									qosEndTime
+								);
+							}
+							wacOwlHost.logScriptQos(
+								qosStartTime,
+								this._scriptError,
+								this._scriptWarning,
+								qosEndTime
+							);
+							wacOwlHost.postOwlLogging(
+								undefined ,
+								getWacFrame()
+							);
+						});
+						
+					}
+				};
+				var onUnload = function () {
+					if (state === 2 ) {
+						state = 4 ;
+						if (!window._spPageContextInfo.killSwitches[
+							"015A3AAE-C5C6-402D-9672-BCAB2ABB72F9"]) {
+							 const error = { wacErrorName: "UserNavigatedAway" };
+							 logQosOnFailure(
+								  "User navigated away.",
+								  2 ,
+								  error);
+						} else {
+						   logQosOnFailure(
+								  "User navigated away.",
+								  2 ,
+								  "");
+						}
+						if (typeof Microsoft?.Office?.OWL?.logJsonStringMetadata === 'function') {
+							const currentTime = new Date();
+							const logData = JSON.stringify({
+								event: 'onNavigateAway',
+								bootStatus: 'failed',
+								wacSessionId: _wopiContextJson.WacSessionId,
+								hostSessionId: _wopiContextJson.SessionId,
+								clientId: appName,
+								isHidden: document.hidden,
+								timestamp: currentTime.toISOString(),
+								wacInitTime: window.wopiDiagClient?.wopiInitTime,
+								timeSinceInit: currentTime.getTime() - window.wopiDiagClient?.wopiInitTime
+							});
+							Microsoft.Office.OWL.logJsonStringMetadata(logData);
+							log(logData);
+						}
+					}
+				};
+				var onBootComplete = function (documentBootInfo, wacBootDiagnostics) {
+					if (!isInitCompleted()) {
+						var wacFrame = getWacFrame();
+						if (wacFrame)
+						{
+							state = 3 ;
+							var diagClient = window.wopiDiagClient;
+							var wopiDiagnostics = {
+								entryPoint: this.getOrigin(),
+								clickTime: this.getClickTime(),
+								client: diagClient,
+								server: window.wopiDiagServer,
+							};
+							var qosStartTime = diagClient.wopiInitTime;
+							
+							var qosEndTime = new Date().getTime();
+							loadWacOwlHostAsync(function (wacOwlHost) {
+								if ((!wacBootDiagnostics || !wacBootDiagnostics?.hasOwnProperty('officeAppEndpoint')) &&
+									(typeof Microsoft?.Office?.OWL?.logJsonStringMetadata === 'function')
+								) {
+									const logData = JSON.stringify({
+										event: 'onBootCompleteUnexpectedWacBootDiagnostics',
+										bootStatus: 'success',
+										wacSessionId: _wopiContextJson.WacSessionId,
+										hostSessionId: _wopiContextJson.SessionId,
+										clientId: appName,
+										isHidden: document.hidden,
+										timestamp: (new Date()).toISOString(),
+										wacInitTime: window.wopiDiagClient?.wopiInitTime,
+									});
+									Microsoft.Office.OWL.logJsonStringMetadata(logData);
+									log(logData);
+								}
+								wacOwlHost.setWacDataCenterCookie(wacBootDiagnostics);
+								wacOwlHost.sendPerfTelemetry(
+									wopiDiagnostics,
+									wacBootDiagnostics
+								);
+								wacOwlHost.logWacInitializationQoS(
+									qosStartTime,
+									0 ,
+									"Success",
+									"",
+									"",
+									qosEndTime
+								);
+								wacOwlHost.logScriptQos(
+									qosStartTime,
+									this._scriptError,
+									this._scriptWarning,
+									qosEndTime
+								);
+								wacOwlHost.postOwlLogging(wacBootDiagnostics, wacFrame);
+								g_WACOwlDone = true;
+							});
+							
+						}
+						else
+						{
+							state = 4 ;
+							var errorMessage = "Unexpected error getting iframe";
+							log(errorMessage);
+							logQosOnFailure(errorMessage, 1 , null);
+						}
+					} else {
+					  if (typeof Microsoft?.Office?.OWL?.logJsonStringMetadata === 'function') {
+						  const currentTime = new Date();
+						  const logData = JSON.stringify({
+							  event: 'onBootCompleteCalledDelayed',
+							  bootStatus: state == 3 ? 'success' : 'failed',
+							  wacSessionId: _wopiContextJson.WacSessionId,
+							  hostSessionId: _wopiContextJson.SessionId,
+							  clientId: appName,
+							  isHidden: document.hidden,
+							  timestamp: currentTime.toISOString(),
+							  wacInitTime: window.wopiDiagClient?.wopiInitTime,
+							  timeSinceInit: currentTime.getTime() - window.wopiDiagClient?.wopiInitTime
+						  });
+						  Microsoft.Office.OWL.logJsonStringMetadata(logData);
+						  log(logData);
+					  }
+					}
+				};
+				var onSuccessNotification = function () {
+					log("Success notification");
+				};
+				var setTitle = function (title) {
+					this.window.document.title = title;
+				};
+				var onDocumentClose = async function () {
+					if (!window._spPageContextInfo.killSwitches[
+							"BCF9BC1F-F5CB-4F24-A875-4866305A00E9"]){
+					   var wacOwlHost = await getWacOwlHost();
+					   wacOwlHost.onDocumentClose();
+					}
+				};
+				var onReturnFocus = async function (args) {
+				   if(!window._spPageContextInfo.killSwitches[
+							"6E78CBDF-A165-4CD3-BAE9-07FE8132E6AE"]){
+					   var wacOwlHost = await getWacOwlHost();
+					   wacOwlHost.onReturnFocus(args);
+					}
+				};
+				var onUserActivity = async function () {
+					var wacOwlHost = await getWacOwlHost();
+					wacOwlHost.onUserActivity();
+				};
+				var onCAAEMessage = async function (args) {
+					var wacOwlHost = await getWacOwlHost();
+					wacOwlHost.onCAAEMessage(args);
+				};
+				var onUserAccess = async function (args) {
+					var wacOwlHost = await getWacOwlHost();
+					wacOwlHost.showAtMentionDialog(args);
+				};
+				var onMoveToFolder = async function (args) {
+					var wacOwlHost = await getWacOwlHost();
+					wacOwlHost.showMoveToFolderDialog(args);
+				};
+				var onSharedFilePicker = async function (args) {
+					var wacOwlHost = await getWacOwlHost();
+					wacOwlHost.showSharedFilePickerDialog(args);
+				};
+				var onFileEmbed = async function () {
+					var wacOwlHost = await getWacOwlHost();
+					wacOwlHost.handleFileEmbed();
+				};
+				var onRename = async function (newName) {
+					var wacOwlHost = await getWacOwlHost();
+					wacOwlHost.handleFileNameChange(newName);
+				};
+				var onSharingLinkTokenProvider = async function () {
+					var wacOwlHost = await getWacOwlHost();
+					wacOwlHost.getShareLinkTokenProvider();
+				};
+				var onFrameChange = async function (frameId) {
+					var wacOwlHost = await getWacOwlHost();
+					if (wacOwlHost.onFrameChange !== undefined)
+					{
+						var frame = document.getElementById(frameId);
+					    wacOwlHost.onFrameChange(frame);
+					}
+				};
+				var invokeSessionRefreshInfoPopupBlockedDialog = async function (props) {
+					var wacOwlHost = await getWacOwlHost();
+					if (wacOwlHost.invokeSessionRefreshInfoPopupBlockedDialog !== undefined)
+					{
+					    wacOwlHost.invokeSessionRefreshInfoPopupBlockedDialog(props);
+					}
+				};
+				var getShareModeStringFromModeEnum = function (mode) {
+					switch (mode) {
+						case 2:
+							return "copy";
+						case 3:
+							return "atMention";
+						case 4:
+							return "linkSettings";
+						case 5:
+							return "manageAccess";
+						case 6:
+							return "notify";
+						case 7:
+							return "addPeople";
+						case 8:
+							return "RMA";
+						default:
+							return "share";
+					}
+				};
+				var _openShareControl = function (openShareControlParams) {
+					loadWacOwlHostAsync(function (wacOwlHost) {
+						if (isConsumer) {
+							 wacOwlHost.showShareDialogForConsumer(openShareControlParams);
+						}
+						else
+						{
+							var additionalData = openShareControlParams['additionalData'] || {};
+							if(!window._spPageContextInfo.killSwitches[
+								"965B6C7C-C016-4687-BBDF-D3A6BDA995C9"
+							]) {
+								additionalData = {
+								   ...additionalData,
+								   listId: openShareControlParams.item.listId,
+								   itemId: openShareControlParams.item.listItemId,
+								   uniqueId:openShareControlParams.item.listItemUniqueId,
+								   itemName: openShareControlParams.item.name,
+								   webAbsoluteUrl: openShareControlParams.item.siteUrl
+								}
+							}
+							var clickTime;
+							if (!window._spPageContextInfo.killSwitches[
+							"D448639E-9EDE-4874-93C4-86256E20BD0F"
+							]) {
+								clickTime = openShareControlParams.clickTime
+											|| openShareControlParams.sendTimeAsClickTime
+											|| Date.now();
+							}
+							else {
+								clickTime = this.getClickTime();
+							}
+							var onShareDialogReady;
+							if (!window._spPageContextInfo.killSwitches[
+							"9DECA695-9F2A-4EFA-B281-71392481FAC4"
+							]) {
+								onShareDialogReady = openShareControlParams.onShareDialogReady;
+							}
+							else {
+								onShareDialogReady = undefined;
+							}
+							var onShareDialogOpen;
+							var onShareDialogClose;
+							if (!window._spPageContextInfo.killSwitches[
+							"A0F5E84B-C936-475A-A461-8C7AF604C5BE"
+							]) {
+								onShareDialogOpen = openShareControlParams.onOpen;
+								onShareDialogClose = openShareControlParams.onClose;
+							}
+							else {
+								onShareDialogOpen = undefined;
+								onShareDialogClose = undefined;
+							}
+							if (!window._spPageContextInfo.killSwitches[
+							"AD1E2C36-0873-40A3-A26A-9F370112085F"
+							]) {
+								wacOwlHost.showShareDialog({
+									ShareCorrelation: openShareControlParams.correlationId,
+									nav: openShareControlParams.navId,
+									mode: typeof openShareControlParams.mode === "number" ?
+										getShareModeStringFromModeEnum(openShareControlParams.mode) :
+										openShareControlParams.mode,
+									clickTime: clickTime,
+									additionalData: additionalData,
+									scenarioId: openShareControlParams['scenarioId'],
+									overrideDefaultPermission: openShareControlParams['overrideDefaultPermission'],
+									contextualSharingContext: openShareControlParams['contextualSharingContext'],
+									contextualSharingLocation: openShareControlParams['contextualSharingLocation'],
+									onShareDialogReady: onShareDialogReady,
+									onShareDialogOpen: onShareDialogOpen,
+									onShareDialogClose: onShareDialogClose
+								});
+							}
+							else {
+								wacOwlHost.showShareDialog({
+									ShareCorrelation: openShareControlParams.correlationId,
+									nav: openShareControlParams.navId,
+									mode: typeof openShareControlParams.mode === "number" ?
+										getShareModeStringFromModeEnum(openShareControlParams.mode) :
+										openShareControlParams.mode,
+									clickTime: clickTime,
+									additionalData: additionalData,
+									onShareDialogReady: onShareDialogReady,
+									onShareDialogOpen: onShareDialogOpen,
+									onShareDialogClose: onShareDialogClose
+								});
+							}
+						}
+					});
+				};
+				var getBootParams = function () {
+					return {
+						documentBootInfo: getDocumentBootInfo(),
+						fetchItemFromNetwork: function (
+							docBootInfo,
+							forceRefresh,
+							zeroByte,
+							logger
+						) {
+							return fetchItemFromNetwork(
+								docBootInfo,
+								forceRefresh,
+								zeroByte,
+								logger
+							);
+						},
+						fetchAccessToken: null,
+						openShareControl: function (openShareControlParams) {
+							return _openShareControl(openShareControlParams);
+						},
+						sessionConfig: getSessionConfig(),
+						container: container,
+						createItem: null,
+						setTitle: setTitle,
+						onBootComplete: function (
+							documentBootInfo,
+							wacBootDiagnostics
+						) {
+							return onBootComplete(documentBootInfo, wacBootDiagnostics);
+						},
+						onBootFailure: function (errorInfo, docInfo) {
+							const errorMessage = "Boot failure: " + JSON.stringify(errorInfo);
+							return fail(errorMessage, errorInfo);
+						},
+						onReturnFocus: function(args){
+							return onReturnFocus(args);
+						},
+						onDocumentClose: function () {
+							return onDocumentClose();
+						},
+						onSuccessNotification: function () {
+							return onSuccessNotification();
+						},
+						onUserActivity: function () {
+							return onUserActivity();
+						},
+						onCAAEMessage: function (args) {
+							return onCAAEMessage(args);
+						},
+						onUserAccess: function (args) {
+							return onUserAccess(args);
+						},
+						onMoveToFolder: function (args) {
+							return onMoveToFolder(args);
+						},
+						onSharedFilePicker: function (args) {
+							return onSharedFilePicker(args);
+						},
+						onRename: onRename,
+						uiHostConfig: getUiHostConfig(),
+						fetchSharingLink: null,
+						additionalApplicationParameters: null,
+						sharingLinkTokenProvider: onSharingLinkTokenProvider,
+						onFrameChange: onFrameChange,
+						invokeSessionRefreshInfoPopupBlockedDialog: invokeSessionRefreshInfoPopupBlockedDialog,
+						onFileEmbed: !isConsumer ? null : function () {
+							return onFileEmbed();
+						}
+					};
+				};
+				var getCreateNewSuccessParams = function () {
+					return {
+						state: "success",
+						wopi: {
+							source: wopiAuthInfo.WopiSrc,
+							accessToken: wopiAuthInfo.AccessToken,
+							expiry: wopiAuthInfo.AccessTokenExpiry,
+							wacToken: null
+						},
+						newFile: {
+							path: wopiFileInfo.NewFilePath,
+							title: wopiFileInfo.UpdatedPageTitle
+						}
+					};
+				};
+				var getCreateNewFailureParams = function (reason) {
+					return {
+						state: "failure",
+						reason: reason
+					};
+				};
+		function getRefreshCount() {
+			var regex = new RegExp('[\?&]refreshcount=([^&#]*)');
+			var rs = regex.exec(location.search);
+			return (rs == null || isNaN(Number(rs[1]))) ? 0 : Number(rs[1]);
+		}
+		function refreshIfNecessary(refreshUri, tokenExpiry) {
+			if (window.refreshIfTokenExpired) {
+				if (
+					tokenExpiry.getTime() - new Date().getTime() < 300000 &&
+					refreshUri
+				) {
+					window.location.replace(
+						refreshUri + "&refreshcount=" + (getRefreshCount() + 1)
+					);
+				}
+			}
+		}
+		function fail(errorMessage, error) {
+			if (!isInitCompleted()) {
+				state = 4 ;
+				log("Failed. Error: " + errorMessage);
+				if (!window._spPageContextInfo.killSwitches[
+						"75D6BFEB-7E69-41D9-87AE-0BBECEA2C8E9"
+						]) {
+					if (error?.qosErrorName == "EncounteredJsApiError" && error?.errorMessage?.startsWith("timeout")) {
+						logJsapiTimeout(errorMessage, error);
+					} else {
+						logQosOnFailure(errorMessage, 1  , error);
+					}
+				}
+				else{
+						if (error?.qosErrorName == "EncounteredJsApiError" && error?.errorMessage == "timeout") {
+							logJsapiTimeout(errorMessage, error);
+						} else {
+							logQosOnFailure(errorMessage, 1  , error);
+						}
+				}
+				if(Microsoft && Microsoft.Office && Microsoft.Office.OWL && isCreateNew && isOwlTwoStepCreateNewEnabled) {
+					Microsoft.Office.OWL.completeCreateNew(getCreateNewFailureParams(errorMessage));
+				}
+			}
+		};
+		function logJsapiTimeout(message, errorObject) {
+			var qosStartTime = window.wopiDiagClient.wopiInitTime;
+			
+			var qosEndTime = new Date().getTime();
+			loadWacOwlHostAsync(function(wacOwlHost) {
+				if (errorObject?.documentLoadedWithTabSwitch ||
+					errorObject?.error?.documentLoadedWithTabSwitch ||
+					document.visibilityState !== "visible") {
+					wacOwlHost.logWacInitializationQoS(
+						qosStartTime,
+						2  ,
+						"WacInit timed out for not focus",
+						message,
+						errorObject,
+						qosEndTime
+					);
+				} else {
+					wacOwlHost.logWacInitializationQoS(
+						qosStartTime,
+						1  ,
+						"WacInit timed out",
+						message,
+						errorObject,
+						qosEndTime
+					);
+				}
+				wacOwlHost.logScriptQos(
+					qosStartTime,
+					this._scriptError,
+					this._scriptWarning,
+					qosEndTime);
+			});
+			
+		}
+		function logQosOnFailure(message, qosResult, errorObject) {
+			var qosStartTime = window.wopiDiagClient.wopiInitTime;
+			const defaultResultCode = "WacInit failed";
+			var resultCode;
+			if (!window._spPageContextInfo.killSwitches[
+					"B7907FD7-C3C4-4B85-8FB1-F197ED06F7C3"
+					]) {
+				resultCode = defaultResultCode + (errorObject?.wacErrorName ? (": " + errorObject?.wacErrorName) : "");
+			} else {
+				resultCode = defaultResultCode;
+			}
+			
+			var qosEndTime = new Date().getTime();
+			loadWacOwlHostAsync(function (wacOwlHost) {
+				wacOwlHost.logWacInitializationQoS(
+					qosStartTime,
+					qosResult,
+					resultCode,
+					message,
+					errorObject,
+					qosEndTime
+				);
+				wacOwlHost.logScriptQos(
+					qosStartTime,
+					this._scriptError,
+					this._scriptWarning,
+					qosEndTime
+				);
+			});
+			
+		}
+		function updateBrowserHistoryForCreateNew() {
+			if (isCreateNew && window.wopiFileInfo && window.wopiFileInfo.NewFilePath) {
+				
+					var filePathToReplace = wopiFileInfo.NewFilePath;
+					try
+					{
+						var url = new URL(wopiFileInfo.NewFilePath);
+						if (url.hostname.startsWith('a830edad9050849odpoc'))
+						{
+							url.hostname = "www.officeppe.com";
+							url.pathname = "/word/create" + url.pathname;
+							filePathToReplace = url.href;
+							log(wopiFileInfo.NewFilePath);
+							log(filePathToReplace);
+						}
+					}
+					catch(err)
+					{
+						log(err);
+					}
+					history.replaceState(
+						{} ,
+						"" ,
+						filePathToReplace
+					);
+				
+				if (wopiFileInfo.UpdatedPageTitle) {
+					document.title = wopiFileInfo.UpdatedPageTitle;
+				}
+			}
+		}
+		async function bootDocument() {
+			try {
+				if (state == 1) {
+					state = 2 ;
+					if (!window._spPageContextInfo.killSwitches[
+						"3D7B3616-4838-4FA3-943B-4664B4FD4580"
+						]) {
+						window.wopiDiagClient.wopiInitTime = new Date().getTime();
+					}
+					setOnTimeout();
+					updateBrowserHistoryForCreateNew();
+					var bootParams = getBootParams();
+					if (_wopiContextJson.OwletConfig) {
+						var owletConfig = JSON.parse(_wopiContextJson.OwletConfig);
+						if (owletConfig) {
+							Object.assign(bootParams.documentBootInfo, owletConfig.documentInfo);
+							Object.assign(bootParams.sessionConfig, owletConfig.sessionConfig);
+							Object.assign(bootParams.uiHostConfig, owletConfig.uiHostConfig);
+						}
+					}
+					wacUiHostSession  = Microsoft.Office.OWL.bootDocumentWithCustomFunctions(
+						bootParams
+					);
+				}
+			} catch (error) {
+				this._scriptError =
+					(error && error.message
+						? error.message
+						: "bootDocumentWithCustomFunctions error.") +
+					", CDN Path: " +
+					bootstrapperUrl;
+				throw error;
+			}
+		}
+		function setOnTimeout() {
+			log("WacInitializer.complete: Trying to complete initialization.");
+			var timeoutInMilli = 150000;
+			if (
+				!window._spPageContextInfo.killSwitches[
+					"C80C205B-9196-43DA-B99B-EF35E35215E0"
+				] &&
+				window.appName === "Excel"
+			) {
+				timeoutInMilli = 450000;
+			}
+			setTimeout(onTimeout, timeoutInMilli);
+			window.addEventListener("beforeunload", onUnload);
+		}
+		
+		function tryDocumentBoot() {
+			try {
+				if (Microsoft && Microsoft.Office && Microsoft.Office.OWL &&
+					(window.isCreateNew && window.isOwlTwoStepCreateNewEnabled ||
+					window.wopiAuthInfo &&
+					window.wopiAuthInfo.AccessToken)) {
+					
+					refreshIfNecessary(
+						window.refreshUri,
+						new Date(window.wopiAuthInfo.AccessTokenExpiry)
+					);
+					if (!window._spPageContextInfo.killSwitches['71CE7C2A-9F12-4C5F-B73A-8C7FF1EC498A']) {
+						let preBoot = Promise.resolve();
+						if (_spPageContextInfo.requireBadgerToken && _spPageContextInfo.badgerTokenEndpoint) {
+							preBoot = fetch(_spPageContextInfo.badgerTokenEndpoint, {
+								method: 'POST',
+								headers: {
+									Accept: 'application/json',
+									'Content-Type': 'application/json'
+								},
+								body: JSON.stringify({ appId: spoAadAppId })
+							})
+							.then((response) => {
+								if (!response.ok) {
+									throw new Error('HTTP ' + response.status);
+								}
+							})
+							.catch((error) => {
+								logQosOnFailure(
+									'Initialization failed. Cannot retrieve badger token',
+									2 ,
+									{ error: error, wacErrorName: 'CannotRetrieveBadgerToken' }
+								);
+								if (_spPageContextInfo.accessDeniedUrl) {
+									const targetUrl = `${_spPageContextInfo.webAbsoluteUrl}/${_spPageContextInfo.layoutsUrl}/${_spPageContextInfo.accessDeniedUrl}`;
+									window.location.assign(targetUrl);
+								}
+								throw error;
+							});
+						}
+						preBoot.then(() => {
+							bootDocument();
+						});
+					} else {
+						bootDocument();
+					}
+				}
+			} catch (error) {
+				var errorMessage =
+					"Initialization failed.Error: " + error.message
+						? error.message
+						: error;
+				fail(errorMessage);
+			}
+		}
+		function onOwlLoad() {
+			state = 1;
+			if((!window._spPageContextInfo.killSwitches["0D7941F6-FF8C-467D-B623-3E80F7963F79"])&& (isDocAspxMsalEarlyStartEnabled||isDocAspxMsalEarlyStartTreatment)) {
+				  loadMsalAsync();
+			}
+			tryDocumentBoot();
+		}
+		function getCurrentTime() {
+			return new Date().getTime();
+		}
+		function onOwlError(src) {
+		
+			fail("Initialization failed. Error loading OWL script", {
+				wacErrorName: 'OwlScriptLoadError',
+				src: src?.replaceAll('/', '\\')
+			});
+		
+		}
+		function onCreateNewComplete() {
+			state = 1;
+			if(!isOwlTwoStepCreateNewEnabled)
+			{
+				tryDocumentBoot();
+			}
+			else if(Microsoft && Microsoft.Office && Microsoft.Office.OWL &&
+			   isOwlTwoStepCreateNewEnabled)
+			{
+				updateBrowserHistoryForCreateNew();
+				Microsoft.Office.OWL.completeCreateNew(getCreateNewSuccessParams());
+			}
+		}
+  // ]]>
+</script>
+	<script type='text/javascript' nonce='6a02a031-8072-4fff-ad8f-5a4b3ccef147'>
+						var loadOwlStartTime = Date.now();
+						window.performance
+							&& window.performance.mark
+							&& window.performance.mark('owlLoadOwlStart');
+						var initPackage = function(reTryAttempted){
+							window.performance
+								&& window.performance.mark
+								&& window.performance.mark('owlLoadOwlEnd');
+							var initPackageParams = {"clientVersion":"20260630.7","exposure":"100","wiseEnvironment":"production","owlBootstrapperDiagnostics":{"getManifestFromRemoteTimeElapsed":3,"loadManifestServerTimeElapsed":0,"loadOwlStartTime":0,"loadOwlEndTime":0},"reTryAttempted":false,"integrityHash":null,"fileUrl":null,"jsApiUrl":null,"jsApiSri":null};
+							initPackageParams.jsApiUrlInfos = new Map([['Word', {"jsApiUrl":"https://res.public.onecdn.static.microsoft/wise/owl/word.boot.68b344835586d8a06307.js","jsApiSri":"sha384-P6k1LjqJflicn7nMmCvZyx2yxxfJsbn+5MDhlIbXcCu7/ApXKTlmzS813CF+lZmL","preloadedInBootStrapper":true}]]);
+							initPackageParams.reTryAttempted = reTryAttempted;
+							initPackageParams.owlBootstrapperDiagnostics.loadOwlStartTime = loadOwlStartTime;
+							initPackageParams.owlBootstrapperDiagnostics.loadOwlEndTime = Date.now();
+							Microsoft.Office.OWL.initPackage(initPackageParams);
+							onOwlLoad();
+						};
+					</script>
+<script type='text/javascript' nonce='6a02a031-8072-4fff-ad8f-5a4b3ccef147'>
+						function retryScriptLoad() {
+							var head= document.getElementsByTagName('head')[0];
+							var script = document.createElement('script');
+                            script.src = 'https://res.public.onecdn.static.microsoft/wise/owl/owl.slim.e180403dfd58f0a4cc52.js';
+							script.integrity ='sha384-AH5Ys0VceWPMs+6jkwPPe1E/zrCHUpwA+OTT7V6lReJ2Fz8nxOCu6WyvcLWgwePP';
+							script.crossOrigin = 'anonymous';
+							script.onerror = function() { onOwlError('https://res.public.onecdn.static.microsoft/wise/owl/owl.slim.e180403dfd58f0a4cc52.js') };
+							script.onload = function() { initPackage(true) };
+							script.nonce = '6a02a031-8072-4fff-ad8f-5a4b3ccef147';
+							head.appendChild(script);
+						}
+					</script>
+<script  nonce='6a02a031-8072-4fff-ad8f-5a4b3ccef147'
+						src='https://res.public.onecdn.static.microsoft/wise/owl/owl.slim.e180403dfd58f0a4cc52.js' 
+						integrity='sha384-AH5Ys0VceWPMs+6jkwPPe1E/zrCHUpwA+OTT7V6lReJ2Fz8nxOCu6WyvcLWgwePP'
+						crossorigin='anonymous'
+						onload="initPackage(false)"
+						onerror='retryScriptLoad()'
+						
+					></script>
+
+	 <link rel="preconnect" href="https://res-1.public.onecdn.static.microsoft" crossorigin /><link rel="preload" href="https://res-1.public.onecdn.static.microsoft/files/odsp-web-prod_2026-06-19.004/wacowlhostwebpack/wacowlhostwebpack.js" as="script" integrity="sha256-lhFboFOF5K2koSSXUCyERqc01LBgOKUlXjYrwMuTt5c=" crossorigin="anonymous" /><script type="text/javascript" nonce="6a02a031-8072-4fff-ad8f-5a4b3ccef147">
+	!function(){if('PerformanceLongTaskTiming' in window){var g=window.__tti={e:[]};g.o=new PerformanceObserver(function(l){g.e=g.e.concat(l.getEntries())});g.o.observe({entryTypes:['longtask']})}}();
+</script><script type="text/javascript" nonce="6a02a031-8072-4fff-ad8f-5a4b3ccef147">
+	var g_responseEnd = new Date().getTime();window.performance && performance.mark('EUPL.W3CResponseEnd');window['FabricConfig'] = { fontBaseUrl: ''};window['__odsp_culture'] = 'it';window['__odspSriHashes'] = {"0":"sha256-2aQQT6Uo3kte+0W04ozSqW4cOmzgcmBzDsLNY9ZqZrQ=","1":"sha256-JkwOX6yY3IsZj6UdBjIfmbk7XSkqjbshdCoRbVZBaTc=","2":"sha256-4UhDngZ463quTKB6u6dEyUo0kOEppEQiT3kYByMUGgw=","3":"sha256-INHto7W6WiWgsQoGUuZwjCZ9X5CtWht1Ps1gduQ0miQ=","4":"sha256-rBJ8fgXNc2Mxmj0v7cwosOWtJCm+5czYYzq86BCS9Rg=","5":"sha256-OiFBIl/MdWEHmJhAB8/8ps2uc9ul5xMVGh8nEiJq01I=","6":"sha256-TroKKCU1oqIDMiPz+vvy1GsR7uydHRGuadPi3dD2EmE=","7":"sha256-X7SXaBSAgRDBzT6oRwBbO58h/Ftlv+D/ZVQXEJTCo84=","8":"sha256-ITt5oUBLGNpKPBfOCJEfu029obvquk7aXReTIQ1FaqI=","9":"sha256-WCSs1RkYSfhpyS3QEXZ26sLdF1pbHFjj9wVW6yBgNcE=","10":"sha256-/J944MUDUHlqtA9EyW1ElhkD+kqi4NX/0UCbhnnNif0=","11":"sha256-btjV+Q2IzIaoREjIbyEWoVrQ0gT894y3XTb2gQzwecQ=","12":"sha256-B28mi62ro/5Y8Vcr13Zs2p5vHjiKuMoQlRntPd06S3s=","13":"sha256-EkZij3Y/K2sBYFej/GlV21VmIFdVTtQDInsSSX8bEvM=","14":"sha256-0IOLYVvoBi1PugF9cEgiyEitnfDa1T9tgNhcynObtXg=","15":"sha256-A/3rDBx27wCfS0ZgLHX/zSlorF059zYPQwmE0XmvGzA=","16":"sha256-NAP0L4xLk455OGpz6pKHhKCO1YfWcTCM2cIii6uN0QA=","17":"sha256-aPJi+YXS42B/o3zYf/lUCEdVFebOOzM2sFWTj57O0As=","18":"sha256-28Yv4z34jNclp75OGs8UmjJdwLFAsix55tCzv8uhWMk=","19":"sha256-irAXei3EvPnHwI0v/9XMAawqYnVplxnkcD2NdzmKOWg=","20":"sha256-vEnYBltpK3bu7S6xqdAqAMruKMXBiHsO2IWFrx1YTXs=","21":"sha256-WnOieYGw1VW4nbuOdA2Zk8aruED2bfbRCOHDKDuC6no=","22":"sha256-0I2wN3/P7UfDthTIIec4czgZEir0CSLoQRNmR31PH3k=","23":"sha256-CPIRVXosBdnvwtJsypmEwaXIADwNSCxQrwcNQq2xlek=","24":"sha256-yz+ruNmgc5n7iVcYSw6WX85idw9Dfv7cZfZpdrnce7U=","25":"sha256-pJX3/WGXn4AUvk9s6YEY1ISeMQKRiUUjBEAGULagvz0=","26":"sha256-CS9sjPQOpuSxA1QrcdHFNTy5hY9ME2XP8XrNlL1gPvc=","27":"sha256-p36SdZ0d2EdRZiIamA1nby8u3PZgpUgg4ASubGNEUGY=","28":"sha256-ja4B13q9ULHI0dug88nzZ7i23VMaxo9/jZx4dM0ABic=","29":"sha256-0fgzNvL0zwKLMtfdsSnOTdmhJZqPc0cRj3ucIo4rOiA=","30":"sha256-AW/HpnczgXHpUatpbrNRC9bQZgdBMrlhyf1VH3BkBik=","31":"sha256-26JyvIGBu9Jcast9VBrJNsfobUkpvRALTEBYoiYNllY=","32":"sha256-2+cRofBThfF5wqka+qYZsOtmwXRlViDphx0K3GG3X04=","33":"sha256-BIaxURbvDOja2n+fGYOlFyEtPM9wjgxSp/Zug9WpOuI=","34":"sha256-d+Im50Mk6x183ZsdC4Hw0poOgR0jOenqv7WSiRIymHM=","35":"sha256-V0i7lpQgxMszfZhAOfoefMz8AKpBgksEyEAF54n6VIg=","36":"sha256-KE1uHJPfU1JD9oc7bnMMP8+12J4tDL0MP2QV9FUxkfE=","37":"sha256-PQGjUUfP0acrg1O/JAEg/J+ZPx88f2U5ZtrIig+QbWQ=","38":"sha256-DGhCz0SuqqkiPrwN9JkhHUEGBNNCPPHNTEJqZp1qW8A=","39":"sha256-4Ks74duDX5Jayu8GhE8CZsYZaUoZpJnS0Jb86obVtNk=","40":"sha256-K7vTWPM5oCdz5qux1Bz9RTPAccJ64JHOUcNTN3FOayU=","41":"sha256-HFRt7+svUCr7fl/tBff1nOS7nyJkQyeatqucT/FlAGc=","42":"sha256-gM8z7NvZVWqrmS8/XmV8kmcliPZTOMlNKbnhUITEpI8=","43":"sha256-wwpEedDfWBkAJCelYCSr2cv6rSs1wjLZl5XtUUzE7cA=","44":"sha256-/ONuAL4gaZOYxWrNkFbN7Ve5PrrhlELt85UaFl5fWpk=","45":"sha256-H0bmXbzdqCQUCto+Cvna1M9xysdV8UEX7Y/EV5nEeoc=","46":"sha256-twcSFBLVP/Zdk5HDEdlDlPbVf2IVtJrgCfItLI6o0e8=","47":"sha256-50EWkjPmUxjvCRLIwXN4XuuCHjoPK6zfrbEphCwfvng=","48":"sha256-35oq6vCzcYVBPVBH4eFVYsLv3T0MLA9cGGWag/66eQw=","49":"sha256-GxSKG1KCbI+ycSpzXvT2j/7CAcbC8nVHm4bD0J3+nuc=","wacowlhostwebpack.js":"sha256-lhFboFOF5K2koSSXUCyERqc01LBgOKUlXjYrwMuTt5c=","it/ondemand.resx":"sha256-mF0n1tMZCtiZyXUBi21oAkkmFINIYeE+vmE1dhTRDMI=","odsp.knockout.lib-fa98a149.js":"sha256-X+GemPOibnKOVwGRgnx/2bV5n6arTGvcmFDnHigjaOg=","odsp.knockout.lib":"sha256-X+GemPOibnKOVwGRgnx/2bV5n6arTGvcmFDnHigjaOg=","odsp.aria.lib-d5313109.js":"sha256-K5Zp5+ZBcjgKimQxZukq64XoHi9jlZhsBaGquyHdlug=","odsp.aria.lib":"sha256-K5Zp5+ZBcjgKimQxZukq64XoHi9jlZhsBaGquyHdlug=","odsp.1ds.lib-2ac2590c.js":"sha256-4ZxF0JrbKGBVXnoD1OGelauusJu8L5oNp8oW39hwZPI=","odsp.1ds.lib":"sha256-4ZxF0JrbKGBVXnoD1OGelauusJu8L5oNp8oW39hwZPI=","require-2495d64e.js":"sha256-fz0HOkMOC4Fc0km/LBFpNgmSWhXLFK6zju0fXOSx8bg=","odm-b8b798f7.js":"sha256-5vqLw0xEXLlWjeUllPYRQKvu8jdDyEF69v0arPF5Iko=","documentbootstrap-fb83c654.js":"sha256-qudohW95L6SIyngn34cEjOU9okwo7vw9FlQi0G4NaAM=","documentbootstrap-b63bc64c.js":"sha256-vQ+7csRpFS0Y7eKm0dpadC30kp9TN/Xgs2ml18FmmTQ="};window['__odsp_libraryScripts'] = {"odsp.knockout.lib":"https://res-1.public.onecdn.static.microsoft/files/sp-client/odsp.knockout/odsp.knockout.lib-fa98a149.js","odsp.aria.lib":"https://res-1.public.onecdn.static.microsoft/files/sp-client/odsp.aria/odsp.aria.lib-d5313109.js","odsp.1ds.lib":"https://res-1.public.onecdn.static.microsoft/files/sp-client/odsp.1ds/odsp.1ds.lib-2ac2590c.js","odsp-media":"https://res-1.public.onecdn.static.microsoft/files/sp-client/odsp-media-ebe170e9.js"};
+</script><script type="text/javascript" nonce="6a02a031-8072-4fff-ad8f-5a4b3ccef147">
+	window["_spModuleLink"]={"buildNumber":"odsp-web-prod_2026-06-19.004","targetBuildNumber":null,"isBuildAsExperimentRunning":false,"manifestName":"WacOwlHostWebPack","scenarioName":"WacOwlHostWebPack","bugLinkFormat":null,"ulsLinkFormat":null,"libraries":null,"usingRedirectCookie":false,"swAppId":null};
+</script><script type="text/javascript" src="https://res-1.public.onecdn.static.microsoft/files/odsp-web-prod_2026-06-19.004/require-2495d64e.js" id="requireJsScriptLink">
+
+</script><script type="text/javascript" id="requireConfig" nonce="6a02a031-8072-4fff-ad8f-5a4b3ccef147">
+	
+window.__odsp_cdnConfig = {"baseUrls":["https://res-1.public.onecdn.static.microsoft/files/odsp-web-prod_2026-06-19.004/","https://res-2.public.onecdn.static.microsoft/files/odsp-web-prod_2026-06-19.004/","https://res-3.cdn.office.net/files/odsp-web-prod_2026-06-19.004/"],"libraryKey":"sp-client","key":"odsp-web-prod_2026-06-19.004"};
+(function () {
+  var baseUrls = window.__odsp_cdnConfig.baseUrls.concat().splice(0, 2);
+  function getOrigin(url) {
+    var match = url.match(/^https:\/\/[^\/]+\//);
+    return match && match[0];
+  }
+  var origins = baseUrls.map(getOrigin);
+  window.__backupBaseUrl = baseUrls[1];
+  var backupBaseUrl = baseUrls[1];
+  var failOverState = (window.__cdnFailOverState = {
+    baseUrlFailedOver: false,
+    modulesFalledBack: [],
+    onPathFallback: function (moduleId, paths) {
+      var failedModules = failOverState.modulesFalledBack;
+      failedModules.push(moduleId);
+      if (!failOverState.baseUrlFailedOver && failedModules.length >= 2) {
+        for (var id in paths) {
+          var items = paths[id];
+          if (Array.isArray(items) && items.length > 1) {
+            items.shift();
+            require.undef(id);
+            require(null, {
+              skipMap: true
+            })([id]);
+          }
+        }
+        require.config({
+          baseUrl: backupBaseUrl,
+        });
+        failOverState.baseUrlFailedOver = true;
+      }
+    },
+  });
+  function processConfigToSupportFailOver(config) {
+    var paths = config.paths,
+      bundles = config.bundles;
+    function getUrl(origin, index) {
+      return origin
+        ? origins[index]
+        : baseUrls[index];
+    }
+    for (var id in paths) {
+      var path = paths[id];
+      var backup;
+      paths[id] = [];
+      for (var _b = 0; _b < origins.length; _b++) {
+        backup = path.replace(/^(https:\/\/[^\/]+\/)?/, function (match) {
+          return getUrl(match, _b);
+        });
+        paths[id].push(backup);
+      }
+    }
+    for (var id in bundles) {
+      var path = paths[id];
+      if (path) {
+        for (var _a = bundles[id], i = _a.length - 1; i >= 0; i--) {
+          paths[_a[i]] = path;
+        }
+      }
+    }
+    config.onPathFallback = function (opts) {
+        var id = opts.moduleId,
+        config = opts.config,
+        deps = config && config.deps;
+        if (id && deps && deps.indexOf(id) >= 0) {
+            failOverState.onPathFallback(id, paths);
+       }
+    };
+    return config;
+  }
+  var config = {paths:{"wacowlhostwebpack":"wacowlhostwebpack/wacowlhostwebpack","ondemand.resx":"wacowlhostwebpack/it/ondemand.resx","odm":"odm-b8b798f7","odsp.knockout.lib":"https://res-1.public.onecdn.static.microsoft/files/sp-client/odsp.knockout/odsp.knockout.lib-fa98a149","odsp.aria.lib":"https://res-1.public.onecdn.static.microsoft/files/sp-client/odsp.aria/odsp.aria.lib-d5313109","odsp.1ds.lib":"https://res-1.public.onecdn.static.microsoft/files/sp-client/odsp.1ds/odsp.1ds.lib-2ac2590c","odsp-media":"https://res-1.public.onecdn.static.microsoft/files/sp-client/odsp-media-ebe170e9"},bundles:{"wacowlhostwebpack":["odsp-next/roots/WacOwlHost"],"odsp.knockout.lib":["odsp.knockout.lib"],"odsp.aria.lib":["odsp.aria.lib"],"odsp.1ds.lib":["odsp.1ds.lib"],"odsp-media":["odsp-media"]},shim:{},deps:["odsp-next/roots/WacOwlHost"],baseUrl:"https:\u002f\u002fres-1.public.onecdn.static.microsoft\u002ffiles\u002fodsp-web-prod_2026-06-19.004\u002f",waitSeconds:0,onNodeCreated:function(n,c,m,u) {
+n.setAttribute("crossorigin","anonymous");
+var urlParts = u.split('/');
+var fileName = urlParts[urlParts.length - 1];
+var odspSriHashes = window.__odspSriHashes;
+var integrity = odspSriHashes && (odspSriHashes[window.__odsp_culture + '/' + fileName] || odspSriHashes[fileName]);
+if (integrity) {
+    n.setAttribute("integrity",integrity);
+}
+},enforceDefine:false};
+var newConfig = processConfigToSupportFailOver(config);
+window.performance && performance.mark('EUPL.RequireConfigStart');
+require.config(newConfig);
+})();
+</script>
+	<script type="text/javascript" nonce ="6a02a031-8072-4fff-ad8f-5a4b3ccef147" >// <![CDATA[ 
+
+
+		loadWacOwlHostAsync(function (wacOwlHost) {
+			if (wacOwlHost && wacOwlHost.resetUrl) {
+				wacOwlHost.resetUrl(null);
+			}
+		});
+ // ]]>
+</script>
+	
+</body>
+			 </html>
+<script type="text/javascript" nonce="6a02a031-8072-4fff-ad8f-5a4b3ccef147">
+	var g_duration = 118;
+var g_iisLatency = 51;
+var g_cpuDuration = 36;
+var g_queryCount = 4;
+var g_queryDuration = 17;
+var g_requireJSDone = new Date().getTime();
+</script> 
+<script type="text/javascript" nonce='6a02a031-8072-4fff-ad8f-5a4b3ccef147'>
+ var aadTokenFlushTime = new Date().getTime();
+  var wacAadToken = 'eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwia2lkIjoiQ1ZpM215RU1IcVVISkVHZEUxNE56dFlTTmFPOFZ4UEpyYWU2cWctS2V2VSIsInhtc19oZF91dGkiOiI5SV9VS2tXeDIwLXpfV0Fqb2xwaEFBIiwieG1zX2hkX2lhdCI6IjE3ODMzNDc1OTcifQ..NjqL2_kRo9weHkL6JzqshQ.NWDY1XMALew7UL1fBfk5BHIzxDzJNsJYa48HDC9G8jaQ5LIWZ2om0MS7DrvTdspPTH-UaCCA-JWMluTsX53hz0-LS1hvWReO_3XCQbV7TcNjDgTvNGqB0cMSnnIgi8QOBLkHmX6wBcih2_vG8Aoo_hlr_4z0C63yS1YUN3XgsdSOe67YorO_IiUv_OIGRiOwSh0yfi7Smbp_IMSkZ4uNwrEjh69uNMwFwSyCCKl3-FMC735byblBuLXPhjQ4V6H9a60pWaP14xGmYcV9QwFJ4mmSqiW210-sOkiYa4iY5OAC-FUj5HXAUkEnEC28Bd5cUvLHKr7mar_gY9MgoZclFkg2oZcDgNkOSt0FFxb-_D1JvEim41vxOTKawk8dcRqOQ_w13YK1GUa75RSxLok07rzZfFn2sTOr-sDj42W9mtYKk3INGnOxBdTD7Q05h1R65Hxn_XqKenosXD0AMoussECqETwS9zsVU9_S_bVMqyjo_dpkgfso6xPATJzEH3MYsOTHPjKwCrgjmkpNjhbywi9MyGbPMCKblBAd3t-JAHBWgVTcNLA-mVN1caQt6OVhhiaKnz6B4h38b0l0_p7hY8ycF7osgp9tkVji4SQ-Rk9H0lU2a63medK3DX_i-qEJuMkl26T-5HvP6htZQhGNyEN1n1LaM61zzTWunbgcvkqS7ue3LAGVlVr_a_QSOzgIZYKbWgg_ZoHeTb5FVTOi0lIPuKZmAiA3g6XOJQT4aQFjT5XnR10oIOkytAuS1Rj78Z2qp8Dsjlq472jX9iEdp97Ml5Omyg5WS5IKQPj3bFj5bhEygyL0dIkUXmUqD1kCiBOMuUOFF9AnQVT04NLQb0DuJsq5xi6lBU2PIgaAg7HPXPDym2ZsfAwZMIxgb1PJS0fGHhWh8soWHK-8THk7Fs0f3rc2hCgt3THF6-HC61DFVuA3rKu1ebRoNtx6Thxd9SNDcJjuPTaeZCAnqOdZpdv_j4raxWus4I0SvHjiWZ_rIpw4FqKCLF8_XDw6oaboAhjUkrqulvOIJdCipy33_x5HYjk2BptI7ItbTvHWyVOtg8Ue0XL5dbImlJ2MS0b-sO_JqqJu6HG0LM2Pcnp6ywOPW3AXJ6r1nwaNvEIYrRpJ-_ME9L_-S_n-NQb4Nq56rPw6lZen6P_4Ow7HJcZAbUBV-PaMHYyu7QUCTjWRyWABRmODMnqZEcDCrxbzP29eOokjzl3lCbdKK2L-8P-PA7-A6S7EIHRJbEYEaZDKi4Yi9SYLtgyZYGCgLFO2IrMZo3hf_kaTdQnszg2uvMCN6Vm4_ccUZWd-58n-TD7DZ6UQ3C4r6i5xpH_QA97znUnqR9qtUcRlvEOWxBgVrntSXpWMUqm4xlEo8k2cF6WuXO6tBDJ1SAmt_QHvf13ER0ggW9M7sUippb9gvWOcVIC6CYy52lNAI3B5z5AxTc8j1rAt0WAid_bW9URw2Un1i2uBvtnOboWPBHf7PSyjUaK4H6hC_1wMz9_gyeudY10iJa0iVlE3bIk5t3AKWqi_EZR5aAQ6vkd2KIUv2NbJ5Wa60K-_LX5RIai007u3oQeXZgOJdxYc1pg_BPfXVNV45j_-2PimnEYEp7UdKMrGMAdP1uuMvN2wHMzp_yy3Cw1g959Kz3pzR_eqiUz0V2VkPnJRJeKg9iPIq3FLYe8jLmarDAhEzbDpnJcdUbmmFuVUxO3IAk1MoOQuZdC0gZFrhZUXRLhL-V8PSq7rszMYG0dBV-1UC_0kogKnSdf8tzT_5NktxBztHI_HB0ZG84B1yUNID5G08GnY2uXzdpV5n7DWTKZte1NnBwJBS9xCk_Rdg75lSt0jo2ThkwxMrSNPsB1Y3aUAxXENosjAx-nsmYql6CTUyhvcGTU7RhYD1fjaEV3YBTL4I8Zh5gP7U1aKSAnyx6PS0EGjkwFNISQY2u0nGbsu8NNSEhem9br9YTyA0buCJvSExS_1GlmPO_1f4hP613sgh_pKDFR9nnD93gGDqqSEqqnawvjZmfASoTimF8BA6x8ZySTjOJ6oIqn0CHxJ_o-Jd4DpWJgm-yvwnwfp0PtxDUCEYx_3zz7ZMOO6VU9usIxP4qjemBTTFHSGF0UJ9CbXHPJvtNBtGCF3tydOvmgq4nWVS7selrtwhgh9Dx-WSVQU-eykjfs1g96R-kNAma6kCe_UYjg7m09IiEfBLWeljuD1kiPnxna2mrxTFSuU5csglJ4NLqxT9cXwTfr3gaK15IG4bcfmTWCuHtUwBiosGyVdz-xgZ8qJdQwN3nhIOt1XrXlyRn5bsTkysyHTQXF9vPK2PcRVy-lH2lhPk93cJls-6zjY-NTBRgF_fENTWYuu2I5Nwa0oghdIAlo6CIIDKkh_4zM1PWG4kf9DrpvfuMzeGw5-zy9G_tFQsSazUWCPFK9y0qAluBURbwAxIO6ZrMwQauvD7OvL1adq0HJmxyiaJlmypKOS_9GfeQSFbY4f3qus030jLZa0lBmh5FP6XGIf3tvid-a5cIjUHKF9abdyu0_Eb2lRJ-90KtdTMvvEhNaZgtOPGKsAd3jJfoCnEa70fQLsm-wZq4iSq5waTF21OOqp2VhZRZYjAOJ5Q76ycTgbaJEtUPxzEB9H0KOW4UNT9T-XLucAVYPexzWYqfolDGbCtvQnRg1lbyOLTD4SImcEJTMyouwLUxetZqC7BSiifDV5ZiEN51X2xxbSIZ7cvH358ckpgQ_IwCEj1eeJCmJ6g-8oKM3a2mAIzAZBTLGafeF5YEKLSCWEBJqYXyhhi-weK5Ea0eUrMDJ2Y_f9FF3lbMKOQVXIioFv4D5P0zQifeF7tKyY0P9HYyVYq61EJM13_OZWgV-dHTu719U3QO-ZweZvLWnsaS1fZhPkDNJULtd8R4VcbIfMI0BImS8Z0U-EOrlLj0vXxVYhcJczZA4-sIfcVOtEPd6e3iRjfU0M00vB08AO4zRZuu0fOHsJJzzWmQQg9hHDua03YRXoR6aJXnWzHKhbxF7JLfpWW_EZ8RaBfjhNKTAeVwLE-a-HkZTEQ3KHQFg9E8F4QplEGY1o1lYsF_3NRoiM21Oet5-37NvBYj49NG_OZYT_URtksajbmaWn21EUlD3t-BHJCZkZchINGuRf68AbNK8IAK0_TJDLuWY7X4Q84GoD2Xo2S8oRpI4INy0JONM.0VcHdLdWp9itMNQpvUQy4PJX_aUKz55f-fF6435EDBQ';
+  if (wacUiHostSession) {
+      wacUiHostSession.postWacToken(wacAadToken);
+  }
+</script>

@@ -1,0 +1,61 @@
+{
+  "run_name": "baseline",
+  "role": "baseline",
+  "model": "/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/yolov8n_run_1.2_classes_1_2.pt",
+  "id": {
+    "overall": {
+      "precision": 0.4208871598176436,
+      "recall": 0.4836354840980255,
+      "f1": 0.3822029973936066,
+      "map50": 0.32489867921989213,
+      "map50_95": 0.11191336486502317
+    },
+    "per_class": [
+      {
+        "class_id": 0,
+        "class_name": "helmet",
+        "precision": 0.722868561590561,
+        "recall": 0.47434468375822514,
+        "f1": 0.5728116700655835,
+        "map50": 0.515387862229076,
+        "map50_95": 0.1630178076640335
+      },
+      {
+        "class_id": 1,
+        "class_name": "vest",
+        "precision": 0.1189057580447262,
+        "recall": 0.49292628443782577,
+        "f1": 0.19159432472162966,
+        "map50": 0.13440949621070827,
+        "map50_95": 0.060808922066012815
+      }
+    ],
+    "speed_ms_per_image": {
+      "preprocess": 0.09365899178369833,
+      "inference": 14.690804312332169,
+      "loss": 0.00012735388545374494,
+      "postprocess": 0.18779441607840575
+    }
+  },
+  "ood": {
+    "metrics": {
+      "ood_images_total": 55.0,
+      "ood_images_skipped_unreadable": 0.0,
+      "ood_raw_detections_total": 108.0,
+      "ood_images_with_raw_detection": 40.0,
+      "ood_hallucinations_total": 63.0,
+      "ood_images_with_hallucination": 28.0,
+      "ood_image_hallucination_rate": 0.509090909090909,
+      "ood_hallucinations_per_image": 1.1454545454545455,
+      "ood_mean_confidence": 0.42719101290854194,
+      "ood_max_confidence": 0.7873096466064453,
+      "ood_helmet_hallucinations": 24.0,
+      "ood_vest_hallucinations": 39.0
+    },
+    "class_counts": {
+      "vest": 39,
+      "helmet": 24
+    },
+    "csv": "/Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/research_phases/07_testv2/id_ood_comparison_runs/baseline/ood_hallucinations.csv"
+  }
+}

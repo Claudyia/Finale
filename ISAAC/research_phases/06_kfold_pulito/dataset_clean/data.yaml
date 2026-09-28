@@ -1,0 +1,8 @@
+# Dataset base pulito. Lo split train/val lo generano i fold.
+path: /Users/claudia/Desktop/ROBA ISAAC copia/ISAAC_/isaac_odd originale/research_phases/06_kfold_pulito/dataset_clean
+train: images
+val: images
+
+names:
+  0: helmet
+  1: vest

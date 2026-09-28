@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['Gloves', 'Helmet', 'Non-Helmet', 'Person', 'Shoes', 'Vest', 'bare-arms']
+
+roboflow:
+  workspace: site-construction-safety
+  project: site-construction-safety
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/site-construction-safety/site-construction-safety/dataset/1

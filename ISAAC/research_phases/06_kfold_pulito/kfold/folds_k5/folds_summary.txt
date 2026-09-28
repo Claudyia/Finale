@@ -1,0 +1,8 @@
+Manifest: research_phases/06_kfold_pulito/kfold/merged_manifest.csv
+Immagini: 36107  Gruppi: 25194
+
+fold_0: train=28755 val=7352  val[helmet=3798 vest=1447 helmet+vest=1603 neg=504]
+fold_1: train=28944 val=7163  val[helmet=3814 vest=1381 helmet+vest=1465 neg=503]
+fold_2: train=28952 val=7155  val[helmet=3811 vest=1431 helmet+vest=1362 neg=551]
+fold_3: train=28807 val=7300  val[helmet=3856 vest=1446 helmet+vest=1445 neg=553]
+fold_4: train=28970 val=7137  val[helmet=3832 vest=1347 helmet+vest=1457 neg=501]

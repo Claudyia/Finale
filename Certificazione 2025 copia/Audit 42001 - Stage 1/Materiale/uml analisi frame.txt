@@ -1,0 +1,61 @@
+@startuml
+title ISAAC – Frame Processing Flow
+
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam activity {
+  BackgroundColor #BDD7EE
+  BorderColor black
+  StartColor #29AAE1
+  EndColor #29AAE1
+}
+skinparam diamond {
+  BackgroundColor #F8CBAD
+  BorderColor black
+}
+
+
+start
+:IP Camera(capture frame);
+
+partition Edge {
+  :Edge node ⇣ RTSP frame;
+  :Infer **YOLO‑Person**;
+  if (Person detected?) then (yes)
+    :Infer **YOLO‑PPE**;
+    if (PPE compliant?) then (no)
+      :Set **compliant = false**;
+    else (yes)
+      :Set compliant = true;
+    endif
+  else (no)
+    :Skip PPE inference;
+    :Set compliant = true;
+  endif
+  if (Send event?) then (yes)
+    :Build JSON (event + snapshot);
+    :HTTP POST ///{worker_id}/event`//;
+  else (no)
+  stop
+  endif
+}
+
+partition Core {
+  :Validate API Key;
+  if (API Key valid?) then (no)
+    :Return **403**;
+    stop
+  else (yes)
+    :Worker process event;
+    :Save event in **PostgreSQL**;
+    :Save snapshot → encrypted FS;
+    if ("compliant == false") then (yes)
+      :Blur faces;
+      :Send alert e‑mail via SMTP;
+    endif
+    :Return **200 OK**;
+  endif
+}
+
+stop
+@enduml

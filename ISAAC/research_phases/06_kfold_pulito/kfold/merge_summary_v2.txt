@@ -1,0 +1,24 @@
+Immagini uniche totali : 36703
+
+Per sorgente (tenute / scartate come duplicato cross-source):
+  hardhat_kaggle     4581  / 0
+  hardneg_backpack1    819  / 0
+  hardneg_backpack2   1356  / 0
+  hardneg_baseball    195  / 0
+  oodneg              242  / 0
+  ppe_combined      15388  / 5
+  ppe_orig           1194  / 0
+  safety_vests_ext2    596  / 2
+  site_safety        9932  / 0
+  vest_ext           2400  / 0
+
+Contenuto:
+  box helmet : 70436   (in 26443 immagini)
+  box vest   : 36776   (in 14980 immagini)
+  immagini helmet+vest : 7332
+  immagini negative    : 2612
+  rapporto helmet/vest : 1.92
+  gruppi (group_id)    : 25785
+
+Manifest    : research_phases/06_kfold_pulito/kfold/merged_manifest_v2.csv
+Collisioni  : research_phases/06_kfold_pulito/kfold/cross_source_collisions.csv (7 righe)
