@@ -1,0 +1,7 @@
+path: /home/ccordova/Finale/ISAAC/research_phases/06_kfold_pulito/kfold/runs_vestplus/final_model_20260928_1144_split
+train: train.txt
+val: val.txt
+
+names:
+  0: helmet
+  1: vest
