@@ -24,7 +24,7 @@ def main() -> None:
         "--folds-dir",
         default="research_phases/04_kfold_validation/folds/finetune_dataset_ood_hardneg_vestboost_k5",
     )
-    parser.add_argument("--model", default="models/yolov8n-ppe_run_1_classes_1_2.pt")
+    parser.add_argument("--model", default="yolov8n_run_1.2_classes_1_2.pt")
     parser.add_argument("--project", default="finetune_runs/kfold")
     parser.add_argument("--name-prefix", default="ppe_ood_hardneg_vestboost_kfold")
     parser.add_argument("--epochs", type=int, default=50)

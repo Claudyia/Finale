@@ -63,7 +63,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Step D: allena un fold (ripartibile).")
     parser.add_argument("--fold", type=int, required=True)
     parser.add_argument("--folds-dir", default="research_phases/06_kfold_pulito/kfold/folds_k5")
-    parser.add_argument("--model", default="models/yolov8n-ppe_run_1_classes_1_2.pt")
+    parser.add_argument("--model", default="yolov8n_run_1.2_classes_1_2.pt")
     parser.add_argument("--runs-dir", default="research_phases/06_kfold_pulito/kfold/runs",
                         help="Su Colab: una cartella dentro Google Drive.")
     parser.add_argument("--device", default="", help="0 per GPU, cpu, mps. Vuoto = auto.")

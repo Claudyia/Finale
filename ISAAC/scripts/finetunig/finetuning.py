@@ -92,7 +92,7 @@ for dup_idx in range(2):
 # Stampa il numero totale di nuove coppie create
 print(f"Created {created} oversampled image/label pairs")
 
-model = YOLO('/Users/claudia/Desktop/isaac_odd/models/yolov8n-ppe_run_1_classes_1_2.pt')
+model = YOLO('yolov8n_run_1.2_classes_1_2.pt')
 
 model.train(
     data='/Users/claudia/Desktop/isaac_odd/scripts/finetunig/dataset/finetune_dataset/data.yaml',

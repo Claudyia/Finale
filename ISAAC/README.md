@@ -231,7 +231,7 @@ Scopo: confrontare il modello baseline con il modello candidato attuale
 
 Script: `compare_models_local.py` (baseline vs candidate, metriche su split `test`).
 
-Risultato fase 07 (baseline `models/yolov8n-ppe_run_1_classes_1_2.pt`):
+Risultato fase 07 (baseline `yolov8n_run_1.2_classes_1_2.pt`):
 
 ```text
               baseline   candidate   delta
@@ -299,7 +299,7 @@ dataset fase6/
 Modello baseline (fase 01-04):
 
 ```text
-models/yolov8n-ppe_run_1_classes_1_2.pt
+yolov8n_run_1.2_classes_1_2.pt
 ```
 
 Modello baseline usato in fase 07v2:

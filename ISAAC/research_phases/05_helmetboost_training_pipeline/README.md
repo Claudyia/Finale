@@ -20,7 +20,7 @@ Comando:
 ```bash
 python research_phases/05_helmetboost_training_pipeline/phase_1_initial_training/train_initial_yolo_checkpoint.py \
   --data scripts/finetunig/dataset/finetune_dataset_ood_hardneg_vestboost_helmetboost/data.yaml \
-  --model models/yolov8n-ppe_run_1_classes_1_2.pt \
+  --model yolov8n_run_1.2_classes_1_2.pt \
   --project finetune_runs/phase_1_initial \
   --name ppe_ood_hardneg_vestboost_helmetboost_initial \
   --epochs 100 \

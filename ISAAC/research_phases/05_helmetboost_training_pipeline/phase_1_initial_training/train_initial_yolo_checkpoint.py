@@ -88,7 +88,7 @@ def save_metrics(metrics: Any, output_json_path: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Phase 1: train an initial YOLO checkpoint.")
     parser.add_argument("--data", default="scripts/finetunig/dataset/finetune_dataset_ood_hardneg_vestboost_helmetboost/data.yaml")
-    parser.add_argument("--model", default="models/yolov8n-ppe_run_1_classes_1_2.pt")
+    parser.add_argument("--model", default="yolov8n_run_1.2_classes_1_2.pt")
     parser.add_argument("--project", default="finetune_runs/phase_1_initial")
     parser.add_argument("--name", default="ppe_ood_hardneg_vestboost_helmetboost_initial")
     parser.add_argument("--epochs", type=int, default=100)

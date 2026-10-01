@@ -73,7 +73,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Step F: modello finale su tutto il training.")
     parser.add_argument("--manifest", default="research_phases/06_kfold_pulito/kfold/merged_manifest.csv")
     parser.add_argument("--dataset-root", default="research_phases/06_kfold_pulito")
-    parser.add_argument("--model", default="models/yolov8n-ppe_run_1_classes_1_2.pt")
+    parser.add_argument("--model", default="yolov8n_run_1.2_classes_1_2.pt")
     parser.add_argument("--runs-dir", default="research_phases/06_kfold_pulito/kfold/runs")
     parser.add_argument("--name", default="final_model")
     parser.add_argument("--val-frac", type=float, default=0.05)

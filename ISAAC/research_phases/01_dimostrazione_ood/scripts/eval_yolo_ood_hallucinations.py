@@ -290,7 +290,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Evaluate PPE hallucinations on semantic OOD images using pose/person context by default."
     )
-    parser.add_argument("--model", default="models/yolov8n-ppe_run_1_classes_1_2.pt")
+    parser.add_argument("--model", default="yolov8n_run_1.2_classes_1_2.pt")
     parser.add_argument("--id-images-dir", default="scripts/finetunig/dataset/finetune_dataset/images/val")
     parser.add_argument("--id-labels-dir", default="scripts/finetunig/dataset/finetune_dataset/labels/val")
     parser.add_argument("--ood-images-dir", default="isaac_odd_dataset")

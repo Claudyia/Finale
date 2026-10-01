@@ -106,7 +106,7 @@ cd /Users/claudia/Desktop/isaac_odd
 
 /Users/claudia/.pyenv/versions/3.14.4/bin/python research_phases/04_kfold_validation/scripts/train_yolo_kfold.py \
   --folds-dir research_phases/04_kfold_validation/folds/finetune_dataset_ood_hardneg_vestboost_k5 \
-  --model models/yolov8n-ppe_run_1_classes_1_2.pt \
+  --model yolov8n_run_1.2_classes_1_2.pt \
   --project finetune_runs/kfold \
   --name-prefix ppe_ood_hardneg_vestboost_kfold \
   --epochs 50 \

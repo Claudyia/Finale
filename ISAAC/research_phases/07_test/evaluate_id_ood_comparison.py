@@ -36,7 +36,7 @@ EXPERIMENT_NAME = "claudia_ood_confronto"
 BASELINE_RUN_NAME = "baseline_yolov8n_ppe_run1"
 CANDIDATE_RUN_NAME = "run12_fold2_best"
 
-BASELINE_MODEL = Path("models/yolov8n-ppe_run_1_classes_1_2.pt")
+BASELINE_MODEL = Path("yolov8n_run_1.2_classes_1_2.pt")
 CANDIDATE_MODEL = Path("ppe_run12_yoloauto_fold2_best.pt")
 ID_DATASET = Path("research_phases/dataset_test_isaac/data.yaml")
 POSE_MODEL = Path("models/yolov8n-pose.pt")

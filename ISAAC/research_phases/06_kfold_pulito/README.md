@@ -41,7 +41,7 @@ bash research_phases/06_kfold_pulito/run_kfold_local.sh 2      # solo il fold 2
 
 Iperparametri (`scripts/train_one_fold.py`, `HYPERPARAMS`): epochs=100, imgsz=640,
 batch=16, AdamW, lr0=1e-4, weight_decay=1e-3, dropout=0.1, mosaic=0.5, patience=20,
-seed=42. Modello iniziale: `models/yolov8n-ppe_run_1_classes_1_2.pt`. ~15 min/epoca.
+seed=42. Modello iniziale: `yolov8n_run_1.2_classes_1_2.pt`. ~15 min/epoca.
 
 **Ripartibile**: ogni fold e una run separata; `last.pt` salvato ogni epoca ->
 `resume=True` al riavvio; fold finito -> `.done` -> saltato. Puoi fermare (Ctrl-C /

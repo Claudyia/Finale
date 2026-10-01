@@ -10,7 +10,7 @@ import numpy as np
 from ultralytics import YOLO
 
 
-BASELINE_MODEL = Path("models/yolov8n-ppe_run_1_classes_1_2.pt")
+BASELINE_MODEL = Path("yolov8n_run_1.2_classes_1_2.pt")
 CANDIDATE_MODEL = Path("ppe_run12_yoloauto_fold2_best.pt")
 DATASET_YAML = Path("research_phases/dataset_test_isaac/data.yaml")
 OUTPUT_PROJECT = Path("research_phases/07_test/comparison_runs")

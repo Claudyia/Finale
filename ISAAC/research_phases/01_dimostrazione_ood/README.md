@@ -56,7 +56,7 @@ OOD mean confidence: 0.605
 cd /Users/claudia/Desktop/isaac_odd
 
 /Users/claudia/.pyenv/versions/3.14.4/bin/python research_phases/01_dimostrazione_ood/scripts/eval_yolo_ood_hallucinations.py \
-  --model models/yolov8n-ppe_run_1_classes_1_2.pt \
+  --model yolov8n_run_1.2_classes_1_2.pt \
   --pose-model models/yolov8n-pose.pt \
   --require-pose-context \
   --id-images-dir scripts/finetunig/dataset/finetune_dataset/images/val \
