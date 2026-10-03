@@ -1,0 +1,8 @@
+path: /Users/claudia/Desktop/finale copia/ISAAC/research_phases/06_kfold_pulito/dataset_test_v2
+train: test_pulito_1619.txt
+val: test_pulito_1619.txt
+test: test_pulito_1619.txt
+
+names:
+  0: helmet
+  1: vest

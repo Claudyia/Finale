@@ -1,7 +1,39 @@
 # 08 - Confronto a 3 su dataset_test_v2
 
-Verifica indipendente dei 3 modelli principali del progetto. In due passaggi,
-perche' il primo giro si e' rivelato contaminato.
+Verifica indipendente dei 3 modelli principali del progetto. In tre passaggi: i primi
+due su test contaminato / pulito, il terzo dopo aver rifatto la fase 06 dal baseline
+ufficiale.
+
+## Giro 3 (baseline ufficiale, fase 06 rifatta) - 2026-10-03
+
+Il giro 2 usava per `fase06_finale` e per il "terzo modello" pesi addestrati partendo dal
+vecchio `yolov8n-ppe_run_1` (non dal baseline ufficiale `yolov8n_run_1.2_classes_1_2.pt`).
+La fase 06 e stata riaddestrata dal baseline ufficiale; i risultati del giro 2 per quei due
+modelli sono archiviati (experiment MLflow `archivio_modello_vecchio/*`).
+
+Stesso test pulito (1619 immagini, `test_v2_immagini_pulite_1619.txt`), stesso script
+(`07_testv2/compare_models_local.py`), device `mps`:
+
+```text
+modello                    precision   recall     f1       map50    map50_95
+baseline ufficiale           0.503      0.501     0.480     0.433     0.202
+fold2 (fase 05)              0.797      0.447     0.447     0.439     0.220
+fase06 nuova                 0.739      0.744     0.719     0.784     0.450
+fase06 vecchia (archiviata)  0.767      0.735     0.726     0.788     0.456
+terzo modello (vestplus)     da rifare dopo il training
+```
+
+OOD (55 immagini, filtro pose): baseline 63 allucinazioni, fold2 3 (-95.2%), fase06 nuova 9
+(-85.7%). Il fold2 e stato rifatto il 2026-10-03 sul test pulito (prima in MLflow era su
+`dataset_test_isaac`, vecchio experiment archiviato).
+
+Il baseline ha gli stessi numeri del giro 2, quindi era gia quello ufficiale; la fase 06
+nuova e praticamente uguale alla vecchia: il punto di partenza conta poco. Su MLflow
+(http://localhost:5001) l'experiment `baseline_vs_fase06` contiene i run `base` e `ood` con
+le immagini; il procedimento e in `ISAAC/README.md`, sezione "Tracking MLflow". Per
+caricare: `MLFLOW_TRACKING_URI=http://localhost:5001 python3 log_to_mlflow.py fase06`.
+
+Le sezioni sotto descrivono i giri 1 e 2 (storico).
 
 ## Giro 1 (CONTAMINATO) - 2026-09-28
 

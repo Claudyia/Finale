@@ -41,7 +41,13 @@ bash research_phases/06_kfold_pulito/run_kfold_local.sh 2      # solo il fold 2
 
 Iperparametri (`scripts/train_one_fold.py`, `HYPERPARAMS`): epochs=100, imgsz=640,
 batch=16, AdamW, lr0=1e-4, weight_decay=1e-3, dropout=0.1, mosaic=0.5, patience=20,
-seed=42. Modello iniziale: `yolov8n_run_1.2_classes_1_2.pt`. ~15 min/epoca.
+seed=42. Modello iniziale: `yolov8n_run_1.2_classes_1_2.pt` (baseline ufficiale). ~15 min/epoca
+su Mac/MPS, ~3 min/epoca su GPU NVIDIA L40.
+
+**Rifatta il 2026-10-02/03**: i training del 2026-09-10/28 erano partiti dal vecchio
+`yolov8n-ppe_run_1_classes_1_2.pt` (rimosso). Ora tutti i fold e i modelli finali partono dal
+baseline ufficiale. Risultati: fold mAP50 0.8735 +/- 0.0083, mAP50-95 0.5730 +/- 0.0082;
+modello finale mAP50 0.881 / mAP50-95 0.585 (validazione interna). Test pulito: fase 08.
 
 **Ripartibile**: ogni fold e una run separata; `last.pt` salvato ogni epoca ->
 `resume=True` al riavvio; fold finito -> `.done` -> saltato. Puoi fermare (Ctrl-C /
