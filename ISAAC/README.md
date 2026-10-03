@@ -102,7 +102,10 @@ OOD hallucinations: 405
 OOD mean confidence: 0.450
 ```
 
-## Fase 02 - Prova fine tuning
+## Fase 02 - Prova fine tuning (storico, non rifatta)
+
+Training partiti dal vecchio modello, non confrontabili con le fasi 06-08 (vedi
+"Regola sul baseline"). Non rifatta per scelta.
 
 Cartella:
 
@@ -121,7 +124,11 @@ scripts/finetunig/finetuning.py
 research_phases/02_prova_finetuning/scripts/analyze_finetuning_runs.py
 ```
 
-## Fase 03 - Hard negative OOD + vest boost
+## Fase 03 - Hard negative OOD + vest boost (storico, non rifatta)
+
+Training e baseline partiti dal vecchio modello: i numeri (es. allucinazioni 384 -> 123)
+non sono confrontabili con le fasi 01 (rifatta) e 06-08. Non rifatta per scelta; i dataset
+prodotti restano validi e alimentano le fasi 04-06.
 
 Cartella:
 
@@ -260,8 +267,9 @@ mAP50-95 0.585 (helmet mAP50-95 0.494, vest 0.677). Ricetta: manifest
 
 Un secondo modello finale, `runs_vestplus/final_model` ("terzo modello"), usa il manifest
 `merged_manifest_v2_no_leak.csv` (36537 img, con `vest_ext`) e `--vest-oversample 3`.
-Va riaddestrato dal baseline ufficiale: **in corso/da completare** (la versione precedente
-era partita dal vecchio modello ed e archiviata).
+**Riaddestrato il 2026-10-03 dal baseline ufficiale** (6 ore, GPU L40; la versione precedente
+era partita dal vecchio modello ed e archiviata). Validazione interna: P 0.836, R 0.805,
+mAP50 0.875, mAP50-95 0.574. Test vero: fase 08.
 
 Dettagli e comando di training: `research_phases/06_kfold_pulito/README.md`.
 
@@ -318,28 +326,48 @@ I tre candidati, tutti contro lo stesso baseline ufficiale:
 ```text
 fold2     ppe_run12_yoloauto_fold2_best.pt                          fase 05
 fase06    06_kfold_pulito/kfold/runs_noleak_vestboost/final_model   fase 06 (rifatta)
-terzo     06_kfold_pulito/kfold/runs_vestplus/final_model           fase 06 vestplus (da rifare)
+terzo     06_kfold_pulito/kfold/runs_vestplus/final_model           fase 06 vestplus (rifatto)
 ```
 
 Risultati sul test pulito (1619 immagini), baseline ufficiale:
 
 ```text
-                baseline   fold2    fase06 (nuova)
-precision        0.503     0.797      0.739
-recall           0.501     0.447      0.744
-f1               0.480     0.447      0.719
-mAP50            0.433     0.439      0.784
-mAP50-95         0.202     0.220      0.450
+                baseline   fold2    fase06 (nuova)   terzo (vestplus)
+precision        0.503     0.797      0.739             0.757
+recall           0.501     0.447      0.744             0.719
+f1               0.480     0.447      0.719             0.717
+mAP50            0.433     0.439      0.784             0.783
+mAP50-95         0.202     0.220      0.450             0.453
 ```
 
 Fase 06 nuova: mAP50-95 0.450 contro 0.456 della versione partita dal vecchio modello,
-cioe praticamente uguale. Il baseline ha esattamente gli stessi valori di prima (0.503 /
-0.433 / 0.202), a conferma che era gia quello ufficiale.
+cioe praticamente uguale; il terzo modello 0.453 contro 0.468. Il baseline ha esattamente
+gli stessi valori di prima (0.503 / 0.433 / 0.202), a conferma che era gia quello ufficiale.
+Fase 06 e terzo sono praticamente alla pari (differenze di 0.003-0.03, entro il rumore tra run).
 
-OOD (55 immagini, filtro pose): allucinazioni del baseline 63 (28 immagini, 50.9%);
-fold2 3 (riduzione 95.2%); fase 06 nuova 9 (8 immagini, 14.5%), riduzione 85.7%.
-Il fold2 allucina meno ma ha recall 0.447 (sotto il baseline): scarta piu cose, anche quelle giuste. Sul set ID di `dataset_test_isaac`
-(contaminato per la fase 06, indicativo) mAP50-95 0.112 -> 0.333.
+OOD (55 immagini, filtro pose):
+
+```text
+                baseline   fold2    fase06 (nuova)   terzo (vestplus)
+allucinazioni      63        3           9                 6
+immagini colpite   28        3           8                 6
+riduzione           -      95.2%       85.7%             90.5%
+```
+
+Il fold2 allucina meno ma ha recall 0.447 (sotto il baseline): scarta piu cose, anche quelle
+giuste. Sul set ID di `dataset_test_isaac` (contaminato per la fase 06, indicativo)
+mAP50-95 0.112 -> 0.333 per fase 06.
+
+### Conclusione (2026-10-03)
+
+- **fold2: scartato.** mAP50-95 0.220 (meta degli altri due) e recall 0.447, sotto il baseline.
+- **fase 06 e terzo (vestplus): alla pari.** mAP50-95 0.450 contro 0.453; fase 06 ha piu recall
+  (0.744 contro 0.719), il terzo ha meno allucinazioni OOD (6 contro 9) e piu precision.
+  Le differenze sono dentro il rumore: un solo training e un solo seed per modello, 1619
+  immagini di test, 55 immagini OOD (9 contro 6 sono 3 detection).
+- **Scelta consigliata: terzo (vestplus)**, perche l'obiettivo del progetto e ridurre le
+  allucinazioni OOD. Se si privilegia la recall, la fase 06 e equivalente.
+- Per distinguere davvero i due servirebbero piu seed per modello e un set OOD piu grande.
 
 ### Tracking MLflow (Docker)
 
@@ -351,7 +379,7 @@ immagini** (confusion matrix, curve P/R/F1/PR, batch di validazione baseline e c
 ```text
 baseline_vs_fold2                                     valido (rifatto sul test pulito, 2026-10-03)
 baseline_vs_fase06                                    valido (fase 06 rifatta)
-baseline_vs_terzo_modello                             da rifare dopo il training vestplus
+baseline_vs_terzo_modello                             valido (vestplus rifatto, 2026-10-03)
 archivio_modello_vecchio/baseline_vs_fold2            archiviato (calcolato su dataset_test_isaac, non confrontabile)
 archivio_modello_vecchio/baseline_vs_fase06           archiviato (partito dal vecchio modello)
 archivio_modello_vecchio/baseline_vs_terzo_modello    archiviato (idem)
@@ -444,7 +472,7 @@ research_phases/06_kfold_pulito/kfold/runs_noleak_vestboost/final_model/weights/
   fase 06, rifatta il 2026-10-03 (manifest no_leak, vest-oversample 3). Candidato "fase06".
 
 research_phases/06_kfold_pulito/kfold/runs_vestplus/final_model/weights/best.pt
-  fase 06 vestplus (manifest v2 no_leak, vest-oversample 3). Candidato "terzo": da riaddestrare.
+  fase 06 vestplus (manifest v2 no_leak, vest-oversample 3). Candidato "terzo": riaddestrato il 2026-10-03.
 ```
 
 I fold 0-4 (`kfold/runs/fold_N`) servono solo a validare il metodo, non sono modelli da usare.

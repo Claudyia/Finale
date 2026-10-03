@@ -20,18 +20,25 @@ baseline ufficiale           0.503      0.501     0.480     0.433     0.202
 fold2 (fase 05)              0.797      0.447     0.447     0.439     0.220
 fase06 nuova                 0.739      0.744     0.719     0.784     0.450
 fase06 vecchia (archiviata)  0.767      0.735     0.726     0.788     0.456
-terzo modello (vestplus)     da rifare dopo il training
+terzo nuovo (vestplus)       0.757      0.719     0.717     0.783     0.453
+terzo vecchio (archiviato)   0.744      0.715     0.701     0.770     0.468
 ```
 
 OOD (55 immagini, filtro pose): baseline 63 allucinazioni, fold2 3 (-95.2%), fase06 nuova 9
-(-85.7%). Il fold2 e stato rifatto il 2026-10-03 sul test pulito (prima in MLflow era su
+(-85.7%), terzo nuovo 6 (-90.5%). Il fold2 e stato rifatto il 2026-10-03 sul test pulito (prima in MLflow era su
 `dataset_test_isaac`, vecchio experiment archiviato).
 
 Il baseline ha gli stessi numeri del giro 2, quindi era gia quello ufficiale; la fase 06
-nuova e praticamente uguale alla vecchia: il punto di partenza conta poco. Su MLflow
-(http://localhost:5001) l'experiment `baseline_vs_fase06` contiene i run `base` e `ood` con
-le immagini; il procedimento e in `ISAAC/README.md`, sezione "Tracking MLflow". Per
+nuova e praticamente uguale alla vecchia: il punto di partenza conta poco. Fase 06 e terzo
+modello sono alla pari sul test pulito. Su MLflow (http://localhost:5001) gli experiment
+`baseline_vs_fold2`, `baseline_vs_fase06` e `baseline_vs_terzo_modello` contengono ciascuno i
+run `base` e `ood` con le immagini; il procedimento e in `ISAAC/README.md`, sezione "Tracking MLflow". Per
 caricare: `MLFLOW_TRACKING_URI=http://localhost:5001 python3 log_to_mlflow.py fase06`.
+
+**Conclusione del giro 3:** fold2 scartato (mAP50-95 0.220, recall sotto il baseline); fase 06
+e terzo modello alla pari (0.450 contro 0.453, differenze dentro il rumore: un seed, 1619
+immagini, 55 OOD). Scelta consigliata: **terzo (vestplus)** per meno allucinazioni OOD (6
+contro 9); la fase 06 se si privilegia la recall (0.744 contro 0.719).
 
 Le sezioni sotto descrivono i giri 1 e 2 (storico).
 
